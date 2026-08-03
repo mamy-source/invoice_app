@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice #{{invoiceNumber}}</title>
+    <style>
+        /* ===== BASE RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        /* ===== CONTAINER ===== */
+        .invoice-container {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            max-width: 900px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        /* ===== HEADER ===== */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .header-left {
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .header-left h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        
+        .header-left .subtitle {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        
+        .header-right {
+            text-align: right;
+            flex: 0 0 auto;
+            margin-left: 15px;
+        }
+        
+        .header-right .invoice-number {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .header-right .invoice-meta {
+            color: #7f8c8d;
+            font-size: 13px;
+            margin-top: 4px;
+        }
+        
+        .header-right .invoice-meta span {
+            display: block;
+            margin-top: 2px;
+        }
+        
+        /* ===== STATUS BADGE ===== */
+        .status-badge {
+            display: inline-block;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 6px;
+        }
+        
+        .status-draft {
+            background: #f39c12;
+            color: #ffffff;
+        }
+        
+        .status-sent {
+            background: #3498db;
+            color: #ffffff;
+        }
+        
+        .status-paid {
+            background: #27ae60;
+            color: #ffffff;
+        }
+        
+        .status-failed {
+            background: #e74c3c;
+            color: #ffffff;
+        }
+        
+        /* ===== CLIENT INFO ===== */
+        .client-info {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 25px;
+            border-left: 4px solid #2c3e50;
+        }
+        
+        .client-info h3 {
+            font-size: 14px;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+        
+        .client-info p {
+            font-size: 16px;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        .client-info .client-email {
+            color: #3498db;
+            font-weight: 400;
+        }
+        
+        /* ===== PRODUCTS TABLE ===== */
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 25px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        
+        table thead {
+            background: #2c3e50;
+            color: #ffffff;
+        }
+        
+        table thead th {
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        
+        table tbody tr {
+            border-bottom: 1px solid #ecf0f1;
+            transition: background 0.2s;
+        }
+        
+        table tbody tr:hover {
+            background: #f8f9fa;
+        }
+        
+        table tbody tr:last-child {
+            border-bottom: none;
+        }
+        
+        table tbody td {
+            padding: 12px 15px;
+            color: #2c3e50;
+        }
+        
+        .text-right {
+            text-align: right;
+        }
+        
+        .text-muted {
+            color: #95a5a6;
+            font-size: 12px;
+        }
+        
+        /* ===== TOTALS ===== */
+        .totals {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+        
+        .totals-row {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .totals-label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .totals-amount {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        /* ===== FOOTER ===== */
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            text-align: center;
+            color: #95a5a6;
+            font-size: 13px;
+        }
+        
+        .footer p {
+            margin: 4px 0;
+        }
+        
+        .footer .brand {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        /* ============================================ */
+        /* ===== RESPONSIVE BREAKPOINTS ===== */
+        /* ============================================ */
+        
+        /* --- THERMAL (58mm) & POS (80mm) --- */
+        @media print and (max-width: 80mm),
+               screen and (max-width: 400px) {
+            body {
+                padding: 8px;
+                background: #ffffff;
+            }
+            
+            .invoice-container {
+                padding: 12px 10px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            
+            .header {
+                flex-direction: column;
+                padding-bottom: 12px;
+                margin-bottom: 15px;
+            }
+            
+            .header-left h1 {
+                font-size: 20px;
+            }
+            
+            .header-left .subtitle {
+                font-size: 11px;
+            }
+            
+            .header-right {
+                text-align: left;
+                margin-left: 0;
+                margin-top: 8px;
+                width: 100%;
+            }
+            
+            .header-right .invoice-number {
+                font-size: 16px;
+            }
+            
+            .header-right .invoice-meta {
+                font-size: 11px;
+            }
+            
+            .status-badge {
+                font-size: 10px;
+                padding: 3px 12px;
+            }
+            
+            .client-info {
+                padding: 12px 14px;
+                margin-bottom: 15px;
+            }
+            
+            .client-info h3 {
+                font-size: 11px;
+            }
+            
+            .client-info p {
+                font-size: 13px;
+                word-break: break-all;
+            }
+            
+            table {
+                font-size: 11px;
+            }
+            
+            table thead th,
+            table tbody td {
+                padding: 8px 8px;
+            }
+            
+            table thead th {
+                font-size: 10px;
+            }
+            
+            .totals-amount {
+                font-size: 18px;
+            }
+            
+            .totals-label {
+                font-size: 13px;
+            }
+            
+            .footer {
+                font-size: 10px;
+                margin-top: 15px;
+                padding-top: 12px;
+            }
+            
+            .footer .brand {
+                font-size: 11px;
+            }
+        }
+        
+        /* --- POS (80mm) specific --- */
+        @media print and (min-width: 59mm) and (max-width: 80mm),
+               screen and (min-width: 401px) and (max-width: 600px) {
+            .invoice-container {
+                padding: 18px 16px;
+            }
+            
+            .header-left h1 {
+                font-size: 24px;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+            
+            table thead th,
+            table tbody td {
+                padding: 10px 12px;
+            }
+            
+            .totals-amount {
+                font-size: 20px;
+            }
+        }
+        
+        /* --- A5 --- */
+        @media print and (min-width: 81mm) and (max-width: 148mm),
+               screen and (min-width: 601px) and (max-width: 768px) {
+            .invoice-container {
+                padding: 24px 22px;
+            }
+            
+            .header-left h1 {
+                font-size: 26px;
+            }
+            
+            table {
+                font-size: 13px;
+            }
+            
+            table thead th,
+            table tbody td {
+                padding: 10px 14px;
+            }
+        }
+        
+        /* --- A4 (default) --- */
+        @media print and (min-width: 149mm),
+               screen and (min-width: 769px) {
+            .invoice-container {
+                padding: 35px 40px;
+            }
+        }
+        
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            body {
+                background: #ffffff;
+                padding: 0;
+                min-height: auto;
+            }
+            
+            .invoice-container {
+                border-radius: 0;
+                box-shadow: none;
+                padding: 20px;
+                max-width: 100%;
+            }
+            
+            table tbody tr:hover {
+                background: transparent;
+            }
+            
+            .status-badge {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            table thead {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+        
+        /* ===== DARK MODE SUPPORT ===== */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1a1a2e;
+            }
+            
+            .invoice-container {
+                background: #16213e;
+            }
+            
+            .header {
+                border-bottom-color: #0f3460;
+            }
+            
+            .header-left h1,
+            .header-right .invoice-number,
+            .totals-amount,
+            .totals-label {
+                color: #e0e0e0;
+            }
+            
+            .header-right .invoice-meta,
+            .header-left .subtitle {
+                color: #a0a0a0;
+            }
+            
+            .client-info {
+                background: #1a1a2e;
+                border-left-color: #0f3460;
+            }
+            
+            .client-info p {
+                color: #e0e0e0;
+            }
+            
+            table thead {
+                background: #0f3460;
+            }
+            
+            table tbody tr {
+                border-bottom-color: #1a1a2e;
+            }
+            
+            table tbody td {
+                color: #e0e0e0;
+            }
+            
+            table tbody tr:hover {
+                background: #1a1a2e;
+            }
+            
+            .totals {
+                border-top-color: #1a1a2e;
+            }
+            
+            .footer {
+                border-top-color: #1a1a2e;
+                color: #a0a0a0;
+            }
+            
+            .footer .brand {
+                color: #e0e0e0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <!-- ===== HEADER ===== -->
+        <div class="header">
+            <div class="header-left">
+                <h1>INVOICE</h1>
+                <div class="subtitle">Facture / Bill</div>
+            </div>
+            <div class="header-right">
+                <div class="invoice-number">#{{invoiceNumber}}</div>
+                <div class="invoice-meta">
+                    <span>Date: {{formatDate createdAt}}</span>
+                    <span>
+                        Status: 
+                        <span class="status-badge status-{{lowercase status}}">
+                            {{status}}
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ===== CLIENT INFO ===== -->
+        <div class="client-info">
+            <h3>Client / Client</h3>
+            <p>
+                <span class="client-email">{{clientEmail}}</span>
+            </p>
+        </div>
+        
+        <!-- ===== PRODUCTS TABLE ===== -->
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produit / Product</th>
+                        <th class="text-right">Qté</th>
+                        <th class="text-right">Prix unitaire</th>
+                        <th class="text-right">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each products}}
+                    <tr>
+                        <td>
+                            <strong>{{name}}</strong>
+                            <div class="text-muted">Ref: #{{@index}}</div>
+                        </td>
+                        <td class="text-right">{{quantity}}</td>
+                        <td class="text-right">{{formatCurrency unitPrice}}</td>
+                        <td class="text-right">{{formatCurrency (multiply quantity unitPrice)}}</td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <td colspan="4" style="text-align: center; color: #95a5a6; padding: 20px 0;">
+                            Aucun produit / No products
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- ===== TOTALS ===== -->
+        <div class="totals">
+            <div class="totals-row">
+                <span class="totals-label">Total / Amount:</span>
+                <span class="totals-amount">{{formatCurrency total}}</span>
+            </div>
+        </div>
+        
+        <!-- ===== FOOTER ===== -->
+        <div class="footer">
+            <p>
+                <span class="brand">Merci pour votre confiance</span> • 
+                Thank you for your trust
+            </p>
+            <p style="font-size: 11px;">
+                Cette facture est générée automatiquement. En cas de question, contactez-nous.<br>
+                This invoice is automatically generated. For any questions, please contact us.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
