@@ -1,3 +1,4 @@
+import type { Prisma } from "@prisma/client/extension";
 import type e from "express";
 
 declare namespace NodeJS {
@@ -10,5 +11,9 @@ declare namespace NodeJS {
         EMAIL_USERNAME: string;
         EMAIL_PASSWORD: string;
     }
+}
+
+declare global {
+    var prisma: PrismaClient | undefined;
 }
 export {};

@@ -1,0 +1,52 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Invoice {
+  id             String        @id @default(cuid())
+  invoiceNumber  String        @unique @map("invoice_number")
+  clientEmail    String        @map("client_email")
+  total          Decimal       @db.Decimal(10, 2)
+  createdAt      DateTime      @default(now()) @map("created_at")
+  updatedAt      DateTime      @updatedAt @map("updated_at")
+  pdfPath        String?       @map("pdf_path")
+  emailSent      Boolean       @default(false) @map("email_sent")
+  emailError     String?       @map("email_error")
+  
+  products       Product[]
+
+  @@map("invoices")
+}
+
+model Product {
+  id          String   @id @default(uuid())
+  invoiceId   String   @map("invoice_id")
+  name        String
+  quantity    Int
+  unitPrice   Decimal  @db.Decimal(10, 2) @map("unit_price")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+  
+  invoice     Invoice  @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  @@map("products")
+}
+
+// Invoice status enum (bonus)
+enum InvoiceStatus {
+  DRAFT
+  SENT
+  FAILED
+  PAID
+}
