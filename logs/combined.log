@@ -1,0 +1,204 @@
+2026-08-04 14:26:53 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-04 14:26:53"}
+2026-08-04 14:26:53 [INFO]  Database loader initialized
+2026-08-04 14:26:53 [INFO] Express loader initialized
+2026-08-04 14:26:53 [INFO]  Express loader initialized
+2026-08-04 14:26:53 [INFO] Routes configured
+2026-08-04 14:26:53 [INFO] Routes loader initialized
+2026-08-04 14:26:53 [INFO] Error handler initialized
+2026-08-04 14:26:53 [INFO] All loaders completed successfully
+2026-08-04 14:26:53 [INFO] Application initialized successfully
+2026-08-04 14:26:53 [INFO] Server running on http://localhost:9000
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-04 14:26:53"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-04 14:26:53"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-04 14:26:53"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-04 14:26:53"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-04 14:26:53"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-04 14:26:53"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-04 14:26:53"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-04 14:26:53"}
+{"level":"info","message":"Server running on http://localhost:9000","timestamp":"2026-08-04 14:26:53"}
+2026-08-04 14:29:05 [INFO] SIGINT received. Shutting down gracefully...
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","timestamp":"2026-08-04 14:29:05"}
+2026-08-04 14:29:11 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-04 14:29:11"}
+2026-08-04 14:29:11 [INFO]  Database loader initialized
+2026-08-04 14:29:11 [INFO] Express loader initialized
+2026-08-04 14:29:11 [INFO]  Express loader initialized
+2026-08-04 14:29:11 [INFO] Routes configured
+2026-08-04 14:29:11 [INFO] Routes loader initialized
+2026-08-04 14:29:11 [INFO] Error handler initialized
+2026-08-04 14:29:11 [INFO] All loaders completed successfully
+2026-08-04 14:29:11 [INFO] Application initialized successfully
+2026-08-04 14:29:11 [INFO] Server running on http://localhost:9000
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-04 14:29:11"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-04 14:29:11"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-04 14:29:11"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-04 14:29:11"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-04 14:29:11"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-04 14:29:11"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-04 14:29:11"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-04 14:29:11"}
+{"level":"info","message":"Server running on http://localhost:9000","timestamp":"2026-08-04 14:29:11"}
+2026-08-04 14:30:05 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-04 14:30:05"}
+2026-08-04 14:30:09 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-04 14:30:09"}
+2026-08-04 14:30:09 [INFO]  Database loader initialized
+2026-08-04 14:30:09 [INFO] Express loader initialized
+2026-08-04 14:30:09 [INFO]  Express loader initialized
+2026-08-04 14:30:09 [INFO] Routes configured
+2026-08-04 14:30:09 [INFO] Routes loader initialized
+2026-08-04 14:30:09 [INFO] Error handler initialized
+2026-08-04 14:30:09 [INFO] All loaders completed successfully
+2026-08-04 14:30:09 [INFO] Application initialized successfully
+2026-08-04 14:30:09 [INFO] Server running on http://localhost:9000
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-04 14:30:09"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-04 14:30:09"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-04 14:30:09"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-04 14:30:09"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-04 14:30:09"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-04 14:30:09"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-04 14:30:09"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-04 14:30:09"}
+{"level":"info","message":"Server running on http://localhost:9000","timestamp":"2026-08-04 14:30:09"}
+2026-08-04 14:33:40 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-04 14:33:40"}
+2026-08-04 14:33:41 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-04 14:33:41"}
+2026-08-04 14:33:41 [INFO]  Database loader initialized
+2026-08-04 14:33:41 [INFO] Express loader initialized
+2026-08-04 14:33:41 [INFO]  Express loader initialized
+2026-08-04 14:33:41 [INFO] Routes configured
+2026-08-04 14:33:41 [INFO] Routes loader initialized
+2026-08-04 14:33:41 [INFO] Error handler initialized
+2026-08-04 14:33:41 [INFO] All loaders completed successfully
+2026-08-04 14:33:41 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-04 14:33:41"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-04 14:33:41"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-04 14:33:41"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-04 14:33:41"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-04 14:33:41"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-04 14:33:41"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-04 14:33:41"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-04 14:33:41"}
+2026-08-04 14:33:43 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-04 14:33:43"}
+2026-08-04 14:33:44 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-04 14:33:44"}
+2026-08-04 14:33:44 [INFO]  Database loader initialized
+2026-08-04 14:33:44 [INFO] Express loader initialized
+2026-08-04 14:33:44 [INFO]  Express loader initialized
+2026-08-04 14:33:44 [INFO] Routes configured
+2026-08-04 14:33:44 [INFO] Routes loader initialized
+2026-08-04 14:33:44 [INFO] Error handler initialized
+2026-08-04 14:33:44 [INFO] All loaders completed successfully
+2026-08-04 14:33:44 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-04 14:33:44"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-04 14:33:44"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-04 14:33:44"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-04 14:33:44"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-04 14:33:44"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-04 14:33:44"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-04 14:33:44"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-04 14:33:44"}
+2026-08-04 14:36:20 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-04 14:36:20"}
+2026-08-04 14:36:23 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-04 14:36:23"}
+2026-08-04 14:36:23 [INFO]  Database loader initialized
+2026-08-04 14:36:23 [INFO] Express loader initialized
+2026-08-04 14:36:23 [INFO]  Express loader initialized
+2026-08-04 14:36:23 [INFO] Routes configured
+2026-08-04 14:36:23 [INFO] Routes loader initialized
+2026-08-04 14:36:23 [INFO] Error handler initialized
+2026-08-04 14:36:23 [INFO] All loaders completed successfully
+2026-08-04 14:36:23 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-04 14:36:23"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-04 14:36:23"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-04 14:36:23"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-04 14:36:23"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-04 14:36:23"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-04 14:36:23"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-04 14:36:23"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-04 14:36:23"}
+2026-08-04 14:36:24 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-04 14:36:24"}
+2026-08-04 14:36:25 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-04 14:36:25"}
+2026-08-04 14:36:25 [INFO]  Database loader initialized
+2026-08-04 14:36:25 [INFO] Express loader initialized
+2026-08-04 14:36:25 [INFO]  Express loader initialized
+2026-08-04 14:36:25 [INFO] Routes configured
+2026-08-04 14:36:25 [INFO] Routes loader initialized
+2026-08-04 14:36:25 [INFO] Error handler initialized
+2026-08-04 14:36:25 [INFO] All loaders completed successfully
+2026-08-04 14:36:25 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-04 14:36:25"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-04 14:36:25"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-04 14:36:25"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-04 14:36:25"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-04 14:36:25"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-04 14:36:25"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-04 14:36:25"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-04 14:36:25"}
+2026-08-04 14:36:27 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-04 14:36:27"}
+2026-08-04 14:36:28 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-04 14:36:28"}
+2026-08-04 14:36:28 [INFO]  Database loader initialized
+2026-08-04 14:36:28 [INFO] Express loader initialized
+2026-08-04 14:36:28 [INFO]  Express loader initialized
+2026-08-04 14:36:28 [INFO] Routes configured
+2026-08-04 14:36:28 [INFO] Routes loader initialized
+2026-08-04 14:36:28 [INFO] Error handler initialized
+2026-08-04 14:36:28 [INFO] All loaders completed successfully
+2026-08-04 14:36:28 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-04 14:36:28"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-04 14:36:28"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-04 14:36:28"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-04 14:36:28"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-04 14:36:28"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-04 14:36:28"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-04 14:36:28"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-04 14:36:28"}
+2026-08-04 14:36:29 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-04 14:36:29"}
+2026-08-04 14:36:31 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-04 14:36:31"}
+2026-08-04 14:36:31 [INFO]  Database loader initialized
+2026-08-04 14:36:31 [INFO] Express loader initialized
+2026-08-04 14:36:31 [INFO]  Express loader initialized
+2026-08-04 14:36:31 [INFO] Routes configured
+2026-08-04 14:36:31 [INFO] Routes loader initialized
+2026-08-04 14:36:31 [INFO] Error handler initialized
+2026-08-04 14:36:31 [INFO] All loaders completed successfully
+2026-08-04 14:36:31 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-04 14:36:31"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-04 14:36:31"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-04 14:36:31"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-04 14:36:31"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-04 14:36:31"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-04 14:36:31"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-04 14:36:31"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-04 14:36:31"}
+2026-08-04 14:36:31 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-04 14:36:31"}
+2026-08-04 14:36:32 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-04 14:36:32"}
+2026-08-04 14:36:32 [INFO]  Database loader initialized
+2026-08-04 14:36:32 [INFO] Express loader initialized
+2026-08-04 14:36:32 [INFO]  Express loader initialized
+2026-08-04 14:36:32 [INFO] Routes configured
+2026-08-04 14:36:32 [INFO] Routes loader initialized
+2026-08-04 14:36:32 [INFO] Error handler initialized
+2026-08-04 14:36:32 [INFO] All loaders completed successfully
+2026-08-04 14:36:32 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-04 14:36:32"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-04 14:36:32"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-04 14:36:32"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-04 14:36:32"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-04 14:36:32"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-04 14:36:32"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-04 14:36:32"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-04 14:36:32"}
