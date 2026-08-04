@@ -16,9 +16,29 @@ export const env = {
     databaseUrl: required('DATABASE_URL'),
 
     smtp: {
-        host: required('EMAIL_HOST'),
-        port: Number(required('EMAIL_PORT')),
-        user: required('EMAIL_USERNAME'),
-        pass: required('EMAIL_PASSWORD'),
+        host: required('SMTP_HOST'),
+        port: Number(required('SMTP_PORT')),
+        user: required('SMTP_USERNAME'),
+        pass: required('SMTP_PASSWORD'),
+    },
+    pdf: {
+        outputDir: required('PDF_OUTPUT_DIR'),
+    },
+
+    cors: {
+        origins: required('CORS_ORIGIN').split(',').map(origin => origin.trim()),
+        credentials:  required('CORS_CREDENTIALS') === 'true',
+
+    },
+
+    rateLimit: {
+        windowMs: Number(required('RATE_LIMIT_WINDOW_MS')),
+        maxRequests: Number(required('RATE_LIMIT_MAX_REQUESTS')),
+    },
+
+    logger: {
+        level: required('LOG_LEVEL'),
+        dir: required('LOG_DIR'),
+        toFile: required('LOG_TO_FILE') === 'true',
     }
 } as const;

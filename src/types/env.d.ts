@@ -4,12 +4,33 @@ import type e from "express";
 declare namespace NodeJS {
     interface ProcessEnv{
         NODE_ENV: 'development' | 'production' | 'test';
-        PORT?: string;
+        PORT: string;
+
         DATABASE_URL: string;
-        EMAIL_HOST: string;
-        EMAIL_PORT: number;
-        EMAIL_USERNAME: string;
-        EMAIL_PASSWORD: string;
+
+        SMPT_HOST: string;
+        SMPT_PORT: string;
+        SMPT_USERNAME: string;
+        SMPT_PASSWORD: string;
+
+        PDF_OUTPUT_DIR: string;
+
+        CORS_ORIGIN: string;
+        CORS_CREDENTIALS: string;
+
+        RATE_LIMIT_WINDOW_MS: string;
+        RATE_LIMIT_MAX_REQUESTS: string;
+
+        LOG_LEVEL:
+            | "error"
+            | "warn"
+            | "info"
+            | "http"
+            | "verbose"
+            | "debug";
+
+        LOG_DIR: string;
+        LOG_TO_FILE: "true" | "false";
     }
 }
 
