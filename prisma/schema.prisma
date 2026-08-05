@@ -36,6 +36,7 @@ model Product {
   name        String
   quantity    Int
   unitPrice   Decimal  @db.Decimal(10, 2) @map("unit_price")
+  status InvoiceStatus @default(DRAFT)
   createdAt   DateTime @default(now()) @map("created_at")
   updatedAt   DateTime @updatedAt @map("updated_at")
   
