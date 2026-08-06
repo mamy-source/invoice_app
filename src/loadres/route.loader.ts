@@ -2,6 +2,7 @@
 import { env } from '../config/env.js';
 import logger from '../libs/logger.lib.js';
 import type { Express, Request, Response } from 'express';
+import router from '../routes/invoice.routes.js';
 
 function routesLoader(app:Express): Express {
   // Health check endpoint
@@ -24,8 +25,8 @@ function routesLoader(app:Express): Express {
     res.status(200).json({ status: 'alive' });
   });
   
-  // API routes
-//   app.use('/api', apiRoutes);
+  // Invoice routes
+  app.use('/invoices', router);
   
   // 404 handler for unknown routes
   app.use((req, res) => {

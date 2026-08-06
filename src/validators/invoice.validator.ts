@@ -1,4 +1,4 @@
-import z from "zod";
+import {z} from "zod";
 
 
 export const createInvoiceSchema = z.object({
@@ -11,3 +11,8 @@ export const createInvoiceSchema = z.object({
         })
     ).min(1, { message: "At least one product is required" }),
 })
+
+export const updateInvoiceSchema = createInvoiceSchema.partial();
+
+export type CreateInvoiceDto = z.infer<typeof createInvoiceSchema>;
+export type UpdateInvoiceDto = z.infer<typeof updateInvoiceSchema>;

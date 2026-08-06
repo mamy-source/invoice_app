@@ -13,7 +13,7 @@ async function initLoaders(app:Express): Promise<void> {
       logger.info(' Database loader initialized');
   
       // 2. Express middlewares de base (helmet, cors, json, etc.)
-      expressLoader();
+      expressLoader(app);
       logger.info(' Express loader initialized');
   
   

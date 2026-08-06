@@ -11,8 +11,13 @@ import { env } from "../config/env.js";
 import logger from "../libs/logger.lib.js";
 import { generalRateLimit } from "../middlewares/rate-limite.middleware.js";
 
-const app: Express = express();
-function expressLoader() {
+
+function expressLoader(app: Express): void {
+
+    //Body parsers
+    app.use(express.json());
+    app.use(express.urlencoded({ extended: true })); 
+
     //security headers
     app.use(helmet());
     app.use(generalRateLimit);
@@ -27,9 +32,7 @@ function expressLoader() {
     };
     app.use(cors(corsOptions));
 
-    //Body parsers
-    app.use(express.json());
-    app.use(express.urlencoded({ extended: true }));
+       
 
     //Cookie parser
     app.use(cookieParser());
@@ -47,7 +50,6 @@ function expressLoader() {
         });
       }
     logger.info('Express loader initialized');
-    return app;
 
 
 }

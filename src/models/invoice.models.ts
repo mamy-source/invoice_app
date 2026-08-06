@@ -9,6 +9,12 @@ export interface CreateInvoice {
     products: Product[];
 }
 
+export interface UpdateInvoice {
+    clientEmail?: string;
+    products?: Product[];
+}
+
+
 export interface InvoiceResponse {
     id: string;
     invoiceNumber: string;

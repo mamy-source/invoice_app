@@ -99,37 +99,43 @@ export const errorHandler: ErrorRequestHandler = (
  */
 import type { RequestHandler } from "express";
 
-export const asyncHandler =
-    (fn: RequestHandler): RequestHandler =>
-    (req, res, next) => {
-        Promise.resolve(fn(req, res, next)).catch(next);
+export const asyncHandler = <P = any, ResBody = any, ReqBody = any, ReqQuery = any>(
+    fn: (req: Request<P, ResBody, ReqBody, ReqQuery>, res: Response<ResBody>, next: NextFunction) => Promise<any>
+): RequestHandler<P, ResBody, ReqBody, ReqQuery> => {
+    return (req, res, next) => {
+        Promise.resolve(fn(req as Request<P, ResBody, ReqBody, ReqQuery>, res, next)).catch(next);
     };
-
+};
 /**
  * Custom error class for application errors
  */
-export class AppError extends Error {
-    statusCode: number;
 
-    status: string;
+export class AppError extends Error implements AppErrorInterface {
+  statusCode: number;
 
-    isOperational: boolean;
+  status: string;
 
-    constructor(
-        message: string,
-        statusCode: number,
-        isOperational = true
-    ) {
-        super(message);
+  isOperational: boolean;
 
-        this.statusCode = statusCode;
-        this.isOperational = isOperational;
+  errors?: unknown;
 
-        this.status =
-            statusCode >= 400 && statusCode < 500
-                ? "fail"
-                : "error";
+  constructor(
+    message: string,
+    statusCode: number,
+    errors?: unknown,
+    isOperational = true
+  ) {
+    super(message);
 
-        Error.captureStackTrace(this, this.constructor);
-    }
+    this.statusCode = statusCode;
+    this.errors = errors;
+    this.isOperational = isOperational;
+
+    this.status =
+      statusCode >= 400 && statusCode < 500
+        ? "fail"
+        : "error";
+
+    Error.captureStackTrace(this, this.constructor);
+  }
 }

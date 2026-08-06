@@ -1,5 +1,5 @@
 import InvoiceRepository from "../repositories/invoice.repository.js";
-import type { CreateInvoice } from "../models/invoice.models.js";
+import type { CreateInvoice, UpdateInvoice } from "../models/invoice.models.js";
 import logger from "../libs/logger.lib.js";
 import { AppError } from "../middlewares/error.middleware.js";
 import { calculateTotal } from "../utils/calculate-total.js";
@@ -88,11 +88,17 @@ export default class InvoiceService {
 
   public async update(
     id: string,
-    data: CreateInvoice
+    data: UpdateInvoice
   ) {
-    await this.findById(id);
+    const invoice = await this.invoiceRepository.findById(id);
 
-    const total = calculateTotal(data.products);
+    if (!invoice) {
+      throw new AppError("Invoice not found", 404);
+    }
+  
+    const total = data.products
+      ? calculateTotal(data.products)
+      : Number(invoice.total);
 
     return this.invoiceRepository.update(
       id,
