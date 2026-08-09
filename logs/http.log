@@ -1027,3 +1027,143 @@
 {"level":"info","message":"Error handler initialized","timestamp":"2026-08-10 13:33:37"}
 {"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-10 13:33:37"}
 {"level":"info","message":"Application initialized successfully","timestamp":"2026-08-10 13:33:37"}
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 15:48:08"}
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 15:48:08"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 15:48:08"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 15:48:08"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 15:48:08"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 15:48:08"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 15:48:08"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 15:48:08"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 15:48:08"}
+{"level":"info","message":"Incoming request: POST /invoices/cmsh9kegr0000vwhfcg9b5mxc/email?format=A4","timestamp":"2026-08-09 15:49:38"}
+{"format":"A4","level":"info","message":"Envoi de la facture cmsh9kegr0000vwhfcg9b5mxc par email","timestamp":"2026-08-09 15:49:38","to":"client"}
+{"error":{"isOperational":true,"status":"error","statusCode":500},"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","level":"error","message":"Failed to send invoice by email","timestamp":"2026-08-09 15:49:38"}
+{"ip":"::1","level":"error","message":"Email service not configured","method":"POST","stack":"Error: Email service not configured\n    at <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:185:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","statusCode":500,"timestamp":"2026-08-09 15:49:38","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/email?format=A4"}
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 15:52:09"}
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 15:52:14"}
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 15:52:14"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 15:52:14"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 15:52:14"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 15:52:14"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 15:52:14"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 15:52:14"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 15:52:14"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 15:52:14"}
+{"level":"info","message":"Incoming request: POST /invoices/cmsh9kegr0000vwhfcg9b5mxc/email?format=A4","timestamp":"2026-08-09 15:54:26"}
+{"format":"A4","level":"info","message":"Envoi de la facture cmsh9kegr0000vwhfcg9b5mxc par email","timestamp":"2026-08-09 15:54:26","to":"client"}
+{"error":{"isOperational":true,"status":"error","statusCode":500},"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","level":"error","message":"Failed to send invoice by email","timestamp":"2026-08-09 15:54:26"}
+{"ip":"::1","level":"error","message":"Email service not configured","method":"POST","stack":"Error: Email service not configured\n    at <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:185:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","statusCode":500,"timestamp":"2026-08-09 15:54:26","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/email?format=A4"}
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 15:57:34"}
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 15:59:42"}
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 15:59:42"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 15:59:42"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 15:59:42"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 15:59:42"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 15:59:42"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 15:59:42"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 15:59:42"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 15:59:42"}
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 16:12:21"}
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 16:12:27"}
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 16:12:27"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 16:12:27"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 16:12:27"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 16:12:27"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 16:12:27"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 16:12:27"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 16:12:27"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 16:12:27"}
+{"level":"info","message":"Incoming request: POST /invoices/cmsh9kegr0000vwhfcg9b5mxc/email?format=A4","timestamp":"2026-08-09 16:12:31"}
+{"format":"A4","level":"info","message":"Envoi de la facture cmsh9kegr0000vwhfcg9b5mxc par email","timestamp":"2026-08-09 16:12:31","to":"client"}
+{"error":{"isOperational":true,"status":"error","statusCode":500},"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","level":"error","message":"Failed to send invoice by email","timestamp":"2026-08-09 16:12:31"}
+{"ip":"::1","level":"error","message":"Email service not configured","method":"POST","stack":"Error: Email service not configured\n    at <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:185:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","statusCode":500,"timestamp":"2026-08-09 16:12:31","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/email?format=A4"}
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 16:14:51"}
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 16:15:01"}
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 16:15:01"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 16:15:01"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 16:15:01"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 16:15:01"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 16:15:01"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 16:15:01"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 16:15:01"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 16:15:01"}
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 16:15:11"}
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 16:15:44"}
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 16:15:44"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 16:15:44"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 16:15:44"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 16:15:44"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 16:15:44"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 16:15:44"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 16:15:44"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 16:15:44"}
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 16:15:51"}
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 16:15:55"}
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 16:15:55"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 16:15:55"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 16:15:55"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 16:15:55"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 16:15:55"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 16:15:55"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 16:15:55"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 16:15:55"}
+{"level":"info","message":"Incoming request: POST /invoices/cmsh9kegr0000vwhfcg9b5mxc/email?format=A4","timestamp":"2026-08-09 16:16:08"}
+{"format":"A4","level":"info","message":"Envoi de la facture cmsh9kegr0000vwhfcg9b5mxc par email","timestamp":"2026-08-09 16:16:08","to":"client"}
+{"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260806-4987.pdf","timestamp":"2026-08-09 16:16:17"}
+{"level":"info","message":"Email sent successfully","messageId":"<55d7d02e-ea58-9550-1d54-5ce444ea31d2@example.com>","subject":"Facture #INV-20260806-4987","timestamp":"2026-08-09 16:16:25","to":"new@example.com"}
+{"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-09 16:16:25","to":"new@example.com"}
+{"level":"info","message":"Incoming request: GET /api/invoices/cmsh9kegr0000vwhfcg9b5mxc/download","timestamp":"2026-08-09 16:20:41"}
+{"level":"info","message":"Incoming request: GET /favicon.ico","timestamp":"2026-08-09 16:20:41"}
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 16:22:14"}
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 16:22:18"}
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 16:22:18"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 16:22:18"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 16:22:18"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 16:22:18"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 16:22:18"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 16:22:18"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 16:22:18"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 16:22:18"}
+{"level":"info","message":"Incoming request: POST /invoices/cmsh9fqm70000jahfw36ab5dj/email?format=A4","timestamp":"2026-08-09 16:24:36"}
+{"format":"A4","level":"info","message":"Envoi de la facture cmsh9fqm70000jahfw36ab5dj par email","timestamp":"2026-08-09 16:24:36","to":"client"}
+{"invoiceId":"cmsh9fqm70000jahfw36ab5dj","invoiceNumber":"INV-20260806-3307","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260806-3307.pdf","timestamp":"2026-08-09 16:24:39"}
+{"level":"info","message":"Email sent successfully","messageId":"<a58f8f50-56c8-280f-9d76-02e3936d8c77@example.com>","subject":"Facture #INV-20260806-3307","timestamp":"2026-08-09 16:24:47","to":"client@example.com"}
+{"invoiceId":"cmsh9fqm70000jahfw36ab5dj","invoiceNumber":"INV-20260806-3307","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-09 16:24:47","to":"client@example.com"}
+{"level":"info","message":"Incoming request: GET /invoices/cmsh9fqm70000jahfw36ab5dj/download","timestamp":"2026-08-09 16:25:27"}
+{"level":"info","message":"Téléchargement de la facture cmsh9fqm70000jahfw36ab5dj (format: A4)","timestamp":"2026-08-09 16:25:27"}
+{"invoiceId":"cmsh9fqm70000jahfw36ab5dj","invoiceNumber":"INV-20260806-3307","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260806-3307.pdf","timestamp":"2026-08-09 16:25:28"}
+{"filename":"INV-20260806-3307.pdf","invoiceId":"cmsh9fqm70000jahfw36ab5dj","invoiceNumber":"INV-20260806-3307","level":"info","message":"PDF downloaded successfully","timestamp":"2026-08-09 16:25:28"}
+{"level":"info","message":"Incoming request: POST /invoices/email/bulk","timestamp":"2026-08-09 16:29:29"}
+{"count":2,"format":"A4","level":"info","message":"Envoi de 2 factures par email","timestamp":"2026-08-09 16:29:29"}
+{"invoiceId":"cmsh9fqm70000jahfw36ab5dj","invoiceNumber":"INV-20260806-3307","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260806-3307.pdf","timestamp":"2026-08-09 16:29:31"}
+{"level":"info","message":"Email sent successfully","messageId":"<e604d350-0df1-eee7-61bf-32538b342e65@example.com>","subject":"Factures du mois","timestamp":"2026-08-09 16:29:39","to":"client@example.com"}
+{"invoiceId":"cmsh9fqm70000jahfw36ab5dj","invoiceNumber":"INV-20260806-3307","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-09 16:29:39","to":"client@example.com"}
+{"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260806-4987.pdf","timestamp":"2026-08-09 16:29:40"}
+{"error":{"code":"EENVELOPE","command":"DATA","response":"550 5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing","responseCode":550},"level":"error","message":"Failed to send email","timestamp":"2026-08-09 16:29:46","to":"new@example.com"}
+{"error":{"isOperational":true,"status":"error","statusCode":500},"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","level":"error","message":"Failed to send invoice by email","timestamp":"2026-08-09 16:29:46"}
+{"level":"info","message":"Incoming request: POST /invoices/cmsh9kegr0000vwhfcg9b5mxc/email?to=mamitianarandrianantenaina253@gmail.com","timestamp":"2026-08-09 16:32:43"}
+{"format":"A4","level":"info","message":"Envoi de la facture cmsh9kegr0000vwhfcg9b5mxc par email","timestamp":"2026-08-09 16:32:43","to":"mamitianarandrianantenaina253@gmail.com"}
+{"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260806-4987.pdf","timestamp":"2026-08-09 16:32:43"}
+{"level":"info","message":"Email sent successfully","messageId":"<ede03d1a-0213-55a7-0e06-89fb34c6267b@example.com>","subject":"Facture #INV-20260806-4987","timestamp":"2026-08-09 16:32:52","to":"mamitianarandrianantenaina253@gmail.com"}
+{"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-09 16:32:52","to":"mamitianarandrianantenaina253@gmail.com"}
+{"level":"info","message":"Incoming request: POST /invoices/cmsh9kegr0000vwhfcg9b5mxc/email?to=mamitianarandrianantenaina253@gmail.com","timestamp":"2026-08-09 16:34:16"}
+{"format":"A4","level":"info","message":"Envoi de la facture cmsh9kegr0000vwhfcg9b5mxc par email","timestamp":"2026-08-09 16:34:16","to":"mamitianarandrianantenaina253@gmail.com"}
+{"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260806-4987.pdf","timestamp":"2026-08-09 16:34:18"}
+{"level":"info","message":"Email sent successfully","messageId":"<bd698d5e-1093-1877-1c05-0abcfedc737b@example.com>","subject":"Facture #INV-20260806-4987","timestamp":"2026-08-09 16:34:23","to":"mamitianarandrianantenaina253@gmail.com"}
+{"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-09 16:34:23","to":"mamitianarandrianantenaina253@gmail.com"}
+{"level":"info","message":"Incoming request: POST /invoices/cmsh9kegr0000vwhfcg9b5mxc/email?to=mamitianarandrianantenaina253@gmail.com","timestamp":"2026-08-09 16:38:29"}
+{"format":"A4","level":"info","message":"Envoi de la facture cmsh9kegr0000vwhfcg9b5mxc par email","timestamp":"2026-08-09 16:38:29","to":"mamitianarandrianantenaina253@gmail.com"}
+{"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260806-4987.pdf","timestamp":"2026-08-09 16:38:30"}
+{"level":"info","message":"Email sent successfully","messageId":"<c7f50790-e69d-5561-b3ee-dfaff62f1b98@example.com>","subject":"Facture #INV-20260806-4987","timestamp":"2026-08-09 16:38:39","to":"mamitianarandrianantenaina253@gmail.com"}
+{"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-09 16:38:39","to":"mamitianarandrianantenaina253@gmail.com"}
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 16:47:33"}
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 16:47:39"}
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 16:47:39"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 16:47:39"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 16:47:39"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 16:47:39"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 16:47:39"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 16:47:39"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 16:47:39"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 16:47:39"}
