@@ -15,12 +15,14 @@ export const env = {
     nodeEnv: required('NODE_ENV'),
     databaseUrl: required('DATABASE_URL'),
     puppeteerExecutablePath: required('PUPPETEER_EXECUTABLE_PATH') || "/usr/bin/google-chrome",
+    appUrl: required('APP_URL'),
 
     smtp: {
         host: required('SMTP_HOST'),
         port: Number(required('SMTP_PORT')),
         user: required('SMTP_USERNAME'),
         pass: required('SMTP_PASSWORD'),
+        emeilFrom: required('SMTP_FROM')
     },
     pdf: {
         outputDir: required('PDF_OUTPUT_DIR'),

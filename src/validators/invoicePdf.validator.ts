@@ -67,6 +67,33 @@ export const deletePdfSchema = z.object({
     })
 });
 
+/**
+ * Validation pour l'envoi d'email
+ */
+export const sendEmailSchema = z.object({
+    params: z.object({
+        id: idSchema
+    }),
+    query: z.object({
+        format: pdfFormatSchema,
+        subject: z.string().optional(),
+        to: z.string().email("Email invalide").optional()
+    })
+});
+
+/**
+ * Validation pour l'envoi multiple d'emails
+ */
+export const sendMultipleEmailSchema = z.object({
+    body: z.object({
+        invoiceIds: z.array(z.string().min(1, "Chaque ID doit être une chaîne non vide"))
+            .min(1, "Au moins un ID est requis")
+            .optional(),
+        format: pdfFormatSchema,
+        subject: z.string().optional()
+    })
+});
+
 
 
 // ============================================

@@ -10,12 +10,15 @@ import { exportPdfSchema,
     downloadPdfSchema,
     exportPdfsSchema,
     deletePdfSchema,
+    sendMultipleEmailSchema
  } from "../validators/invoicePdf.validator.js";
 
 import prisma from "../config/prisma.js";
 import { validate, validateWithOptions } from "../middlewares/validation.middleware.js";
 
 import { createInvoiceSchema, updateInvoiceSchema } from "../validators/invoice.validator.js";
+
+import EmailService from "../services/email.service.js";
 
 const router:Router = Router();
 
@@ -24,8 +27,10 @@ const repository = new InvoiceRepository(prisma);
 const service = new InvoiceService(repository);
 const controller = new InvoiceController(service);
 
+const emailService = new EmailService()
 
-const invoicePdfService = new InvoicePdfService(repository);
+
+const invoicePdfService = new InvoicePdfService(repository, emailService);
 const invoicePdfController = new InvoicePdfController(invoicePdfService);
 
 router.post("/", validate(createInvoiceSchema), controller.create.bind(controller));
@@ -38,6 +43,11 @@ router.post('/:id/export', validateWithOptions(exportPdfSchema), invoicePdfContr
 router.get('/:id/download', validateWithOptions(downloadPdfSchema), invoicePdfController.downloadPdf);
 router.delete('/:id/pdf', validate(deletePdfSchema), invoicePdfController.deletePdf);
 
-router.post('/export/bulk', validate(exportPdfsSchema), invoicePdfController.exportPdfs);
+router.post('/export/bulk', validateWithOptions(exportPdfsSchema), invoicePdfController.exportPdfs);
+
+router.post('/:id/email', invoicePdfController.sendInvoiceEmail);
+router.post('/email/bulk', validateWithOptions(sendMultipleEmailSchema), invoicePdfController.sendMultipleInvoiceEmails);
+
+
 
 export default router;

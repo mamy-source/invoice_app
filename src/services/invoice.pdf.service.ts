@@ -10,6 +10,7 @@ import { AppError } from "../middlewares/error.middleware.js";
 import logger from "../libs/logger.lib.js";
 import { generateInvoiceNumber } from "../utils/generate-invoice-number.js";
 import { env } from "../config/env.js";
+import EmailService from "./email.service.js";
 
 // Constants
 const __filename = fileURLToPath(import.meta.url);
@@ -141,7 +142,8 @@ interface DownloadOptions {
 
 class InvoicePdfService {
   constructor(
-    private readonly invoiceRepository: InvoiceRepository
+    private readonly invoiceRepository: InvoiceRepository,
+    private  emailService: EmailService 
   ) {}
 
   /**
@@ -444,8 +446,98 @@ class InvoicePdfService {
         throw new AppError("Failed to download invoice", 500);
     }
   }
+    /**
+     * Envoyer une facture par email
+     */
+  async sendInvoiceByEmail(
+        invoiceId: string,
+        options?: {
+            to?: string;
+            subject?: string;
+            format?: PdfFormat;
+        }
+    ): Promise<{ success: boolean; messageId?: string; error?: string }> {
+        try {
+            if (!this.emailService) {
+                throw new AppError('Email service not configured', 500);
+            }
 
+            // Récupérer la facture
+            const invoice = await this.invoiceRepository.findById(invoiceId);
+            
+            if (!invoice) {
+                throw new AppError('Invoice not found', 404);
+            }
 
+            // Exporter le PDF
+            const format = options?.format || 'A4';
+            const exportResult = await this.exportInvoice(invoiceId, format);
+
+            // Déterminer le destinataire
+            const to = options?.to || invoice.clientEmail;
+            
+            if (!to) {
+                throw new AppError('Client email not found', 400);
+            }
+
+            // Envoyer l'email
+            const result = await this.emailService.sendInvoiceEmail({
+                to: to,
+                invoiceId: invoiceId,
+                invoiceNumber: invoice.invoiceNumber,
+                clientEmail: invoice.clientEmail,
+                pdfPath: exportResult.pdfPath,
+                pdfFilename: options?.subject ? `${options.subject}.pdf` : undefined,
+                subject: options?.subject || `Facture #${invoice.invoiceNumber}`
+            });
+
+            return {
+                success: true,
+                messageId: result.messageId
+            };
+        } catch (error) {
+            logger.error('Failed to send invoice by email', {
+                error,
+                invoiceId
+            });
+
+            return {
+                success: false,
+                error: error instanceof AppError ? error.message : 'Unknown error'
+            };
+        }
+    }
+
+    /**
+     * Envoyer plusieurs factures par email
+     */
+    async sendMultipleInvoicesByEmail(
+      invoiceIds: string[],
+      options?: {
+          format?: PdfFormat;
+          subject?: string;
+      }
+  ): Promise<Array<{ invoiceId: string; success: boolean; error?: string | undefined; }>> {
+      const results = [];
+
+      for (const invoiceId of invoiceIds) {
+          try {
+              const result = await this.sendInvoiceByEmail(invoiceId, options);
+              results.push({
+                  invoiceId,
+                  success: result.success,
+                  error: result.error
+              });
+          } catch (error) {
+              results.push({
+                  invoiceId,
+                  success: false,
+                  error: error instanceof AppError ? error.message : 'Unknown error'
+              });
+          }
+      }
+
+      return results;
+  }
 }
-
 export default InvoicePdfService;

@@ -24,6 +24,22 @@ interface ExportMultiplePdfQuery {
     ids?: string; // Format: "id1,id2,id3" ou "id1 id2 id3"
 }
 
+interface SendEmailParams {
+    id: string;
+}
+
+interface SendEmailQuery {
+    format?: string;
+    subject?: string;
+    to?: string;
+}
+
+interface SendMultipleEmailBody {
+    invoiceIds: string[];
+    format?: string;
+    subject?: string;
+}
+
 export default class InvoicePdfController {
     constructor(private readonly invoicePdf: InvoicePdfService) {}
 
@@ -133,6 +149,91 @@ export default class InvoicePdfController {
                 errors: errorCount,
                 details: results
             }, `${successCount} factures exportées avec succès${errorCount > 0 ? `, ${errorCount} échec(s)` : ''}`);
+        }
+    );
+    /**
+     * Envoyer une facture par email
+     * @route POST /api/invoices/:id/email
+     */
+    public sendInvoiceEmail = asyncHandler(
+        async (
+          req: Request<SendEmailParams, any, any, SendEmailQuery>,
+          res: Response
+        ) => {
+          const { format = "A4", subject, to } = req.query;
+      
+          const selectedFormat = this.validatePdfFormat(format);
+      
+          logger.info(
+            `Envoi de la facture ${req.params.id} par email`,
+            {
+              to: to || "client",
+              format: selectedFormat,
+            }
+          );
+      
+          const result = await this.invoicePdf.sendInvoiceByEmail(
+            req.params.id,
+            {
+              format: selectedFormat,
+              subject: subject as string,
+              to: to as string,
+            }
+          );
+      
+          if (!result.success) {
+            throw new AppError(
+              result.error || "Échec de l'envoi de l'email",
+              500
+            );
+          }
+      
+          return sendSuccess(
+            res,
+            {
+              invoiceId: req.params.id,
+              messageId: result.messageId,
+              sent: true,
+            },
+            "Facture envoyée par email avec succès"
+          );
+        }
+      );
+
+    /**
+     * Envoyer plusieurs factures par email
+     * @route POST /api/invoices/email/bulk
+     */
+    public sendMultipleInvoiceEmails: RequestHandler<any, any, SendMultipleEmailBody, any> = asyncHandler(
+        async (req: Request<any, any, SendMultipleEmailBody, any>, res: Response) => {
+            const { invoiceIds, format = 'A4', subject } = req.body;
+
+            if (!invoiceIds || !Array.isArray(invoiceIds) || invoiceIds.length === 0) {
+                throw new AppError('Veuillez fournir une liste d\'IDs de factures', 400);
+            }
+
+            const selectedFormat = this.validatePdfFormat(format);
+
+            logger.info(`Envoi de ${invoiceIds.length} factures par email`, {
+                count: invoiceIds.length,
+                format: selectedFormat
+            });
+
+            const results = await this.invoicePdf.sendMultipleInvoicesByEmail(invoiceIds, {
+                format: selectedFormat,
+                ...(subject && { subject })
+            });
+    
+
+            const successCount = results.filter(r => r.success).length;
+            const errorCount = results.filter(r => !r.success).length;
+
+            return sendSuccess(res, {
+                total: results.length,
+                success: successCount,
+                errors: errorCount,
+                details: results
+            }, `${successCount} factures envoyées avec succès${errorCount > 0 ? `, ${errorCount} échec(s)` : ''}`);
         }
     );
 }
