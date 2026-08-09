@@ -16,3 +16,32 @@
 {"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 16:53:30"}
 {"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 16:53:30"}
 {"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 16:53:30"}
+2026-08-09 16:54:44 [INFO] Incoming request: POST /invoices/cmsh9kegr0000vwhfcg9b5mxc/email?format=A5&subject=Facture%20Mois%20Janvier
+{"level":"info","message":"Incoming request: POST /invoices/cmsh9kegr0000vwhfcg9b5mxc/email?format=A5&subject=Facture%20Mois%20Janvier","timestamp":"2026-08-09 16:54:44"}
+2026-08-09 16:54:44 [INFO] Envoi de la facture cmsh9kegr0000vwhfcg9b5mxc par email
+Metadata: {
+  "to": "client",
+  "format": "A5"
+}
+{"format":"A5","level":"info","message":"Envoi de la facture cmsh9kegr0000vwhfcg9b5mxc par email","timestamp":"2026-08-09 16:54:44","to":"client"}
+2026-08-09 16:54:45 [INFO] Invoice PDF generated successfully
+Metadata: {
+  "invoiceId": "cmsh9kegr0000vwhfcg9b5mxc",
+  "invoiceNumber": "INV-20260806-4987",
+  "pdfPath": "/home/mie-kely/invoice/pdf/invoices/INV-20260806-4987.pdf"
+}
+{"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260806-4987.pdf","timestamp":"2026-08-09 16:54:45"}
+2026-08-09 16:54:52 [INFO] Email sent successfully
+Metadata: {
+  "to": "new@example.com",
+  "subject": "Facture Mois Janvier",
+  "messageId": "<84323c5a-a2a9-c479-6e8f-eff974ce21de@example.com>"
+}
+{"level":"info","message":"Email sent successfully","messageId":"<84323c5a-a2a9-c479-6e8f-eff974ce21de@example.com>","subject":"Facture Mois Janvier","timestamp":"2026-08-09 16:54:52","to":"new@example.com"}
+2026-08-09 16:54:52 [INFO] Invoice email sent successfully
+Metadata: {
+  "invoiceId": "cmsh9kegr0000vwhfcg9b5mxc",
+  "invoiceNumber": "INV-20260806-4987",
+  "to": "new@example.com"
+}
+{"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-09 16:54:52","to":"new@example.com"}
