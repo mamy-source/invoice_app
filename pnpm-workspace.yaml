@@ -2,3 +2,4 @@ allowBuilds:
   '@prisma/engines': false
   esbuild: true
   prisma: true
+  puppeteer: true

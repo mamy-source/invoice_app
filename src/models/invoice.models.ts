@@ -7,6 +7,7 @@ export interface Product {
 export interface CreateInvoice {
     clientEmail: string;
     products: Product[];
+    pdfUrl?: string;
 }
 
 export interface UpdateInvoice {
@@ -24,6 +25,7 @@ export interface InvoiceResponse {
     createdAt: Date;
     emailSent: boolean;
     emailError?: string | null;
+    
 }
 
 export interface ProductResponse {

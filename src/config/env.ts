@@ -14,6 +14,7 @@ export const env = {
     port : Number(process.env["PORT"]) || 3000,
     nodeEnv: required('NODE_ENV'),
     databaseUrl: required('DATABASE_URL'),
+    puppeteerExecutablePath: required('PUPPETEER_EXECUTABLE_PATH') || "/usr/bin/google-chrome",
 
     smtp: {
         host: required('SMTP_HOST'),

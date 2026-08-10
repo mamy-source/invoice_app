@@ -128,3 +128,188 @@ Metadata: {
   "stack": "TypeError: Cannot read properties of undefined (reading 'reduce')\n    at calculateTotal (/home/mie-kely/invoice/src/utils/calculate-total.ts:6:19)\n    at InvoiceService.update (/home/mie-kely/invoice/src/services/invoice.service.ts:95:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controllers.ts:31:25)"
 }
 {"ip":"::1","level":"error","message":"Cannot read properties of undefined (reading 'reduce')","method":"PATCH","stack":"TypeError: Cannot read properties of undefined (reading 'reduce')\n    at calculateTotal (/home/mie-kely/invoice/src/utils/calculate-total.ts:6:19)\n    at InvoiceService.update (/home/mie-kely/invoice/src/services/invoice.service.ts:95:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controllers.ts:31:25)","statusCode":500,"timestamp":"2026-08-06 11:59:40","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc"}
+2026-08-10 11:40:32 [ERROR] Validation failed
+Metadata: {
+  "statusCode": 400,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/export",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+  "errors": {}
+}
+{"errors":{},"ip":"::1","level":"error","message":"Validation failed","method":"POST","stack":"Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","statusCode":400,"timestamp":"2026-08-10 11:40:32","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/export"}
+2026-08-10 11:44:54 [ERROR] Validation failed
+Metadata: {
+  "statusCode": 400,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/export",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+  "errors": {}
+}
+{"errors":{},"ip":"::1","level":"error","message":"Validation failed","method":"POST","stack":"Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","statusCode":400,"timestamp":"2026-08-10 11:44:54","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/export"}
+2026-08-10 11:51:21 [ERROR] Failed to generate HTML
+Metadata: {
+  "error": {
+    "errno": -2,
+    "code": "ENOENT",
+    "syscall": "access",
+    "path": "/home/mie-kely/invoice/src/services/src/templates/invoice.hbs"
+  },
+  "invoiceId": "cmsh9kegr0000vwhfcg9b5mxc"
+}
+{"error":{"code":"ENOENT","errno":-2,"path":"/home/mie-kely/invoice/src/services/src/templates/invoice.hbs","syscall":"access"},"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","level":"error","message":"Failed to generate HTML","timestamp":"2026-08-10 11:51:21"}
+2026-08-10 11:51:21 [ERROR] Failed to generate invoice HTML
+Metadata: {
+  "statusCode": 500,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/export",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "Error: Failed to generate invoice HTML\n    at InvoicePdfService.generateHTML (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:179:13)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:268:22)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)"
+}
+{"ip":"::1","level":"error","message":"Failed to generate invoice HTML","method":"POST","stack":"Error: Failed to generate invoice HTML\n    at InvoicePdfService.generateHTML (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:179:13)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:268:22)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)","statusCode":500,"timestamp":"2026-08-10 11:51:21","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/export"}
+2026-08-10 11:54:49 [ERROR] Failed to generate invoice HTML
+Metadata: {
+  "error": {
+    "errno": -2,
+    "code": "ENOENT",
+    "syscall": "access",
+    "path": "/home/mie-kely/invoice/src/services/src/templates/invoice.hbs"
+  }
+}
+{"error":{"code":"ENOENT","errno":-2,"path":"/home/mie-kely/invoice/src/services/src/templates/invoice.hbs","syscall":"access"},"level":"error","message":"Failed to generate invoice HTML","timestamp":"2026-08-10 11:54:49"}
+2026-08-10 11:54:49 [ERROR] Failed to generate invoice HTML
+Metadata: {
+  "statusCode": 500,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/export",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "Error: Failed to generate invoice HTML\n    at InvoicePdfService.generateHTML (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:182:13)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:274:22)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)"
+}
+{"ip":"::1","level":"error","message":"Failed to generate invoice HTML","method":"POST","stack":"Error: Failed to generate invoice HTML\n    at InvoicePdfService.generateHTML (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:182:13)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:274:22)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)","statusCode":500,"timestamp":"2026-08-10 11:54:49","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/export"}
+2026-08-10 11:56:54 [ERROR] Failed to generate invoice HTML
+Metadata: {
+  "statusCode": 500,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/export",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "Error: Failed to generate invoice HTML\n    at InvoicePdfService.generateHTML (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:180:13)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:272:22)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)"
+}
+{"ip":"::1","level":"error","message":"Failed to generate invoice HTML","method":"POST","stack":"Error: Failed to generate invoice HTML\n    at InvoicePdfService.generateHTML (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:180:13)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:272:22)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)","statusCode":500,"timestamp":"2026-08-10 11:56:54","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/export"}
+2026-08-10 12:02:34 [ERROR] Failed to generate PDF
+Metadata: {
+  "error": {},
+  "invoiceNumber": "INV-20260806-4987"
+}
+{"error":{},"invoiceNumber":"INV-20260806-4987","level":"error","message":"Failed to generate PDF","timestamp":"2026-08-10 12:02:34"}
+2026-08-10 12:02:34 [ERROR] Failed to generate PDF document
+Metadata: {
+  "statusCode": 500,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/export",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "Error: Failed to generate PDF document\n    at InvoicePdfService.generatePDF (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:238:13)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:275:25)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)"
+}
+{"ip":"::1","level":"error","message":"Failed to generate PDF document","method":"POST","stack":"Error: Failed to generate PDF document\n    at InvoicePdfService.generatePDF (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:238:13)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:275:25)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)","statusCode":500,"timestamp":"2026-08-10 12:02:34","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/export"}
+2026-08-10 12:06:33 [ERROR] Failed to generate PDF
+Metadata: {
+  "error": {
+    "name": "Error",
+    "message": "Could not find Chrome (ver. 151.0.7922.71). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /home/mie-kely/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.",
+    "stack": "Error: Could not find Chrome (ver. 151.0.7922.71). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /home/mie-kely/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.\n    at ChromeLauncher.resolveExecutablePath (/home/mie-kely/invoice/node_modules/.pnpm/puppeteer-core@25.5.0/node_modules/puppeteer-core/lib/puppeteer/node/BrowserLauncher.js:319:19)\n    at async ChromeLauncher.computeLaunchArguments (/home/mie-kely/invoice/node_modules/.pnpm/puppeteer-core@25.5.0/node_modules/puppeteer-core/src/node/ChromeLauncher.ts:140:11)\n    at async ChromeLauncher.launch (/home/mie-kely/invoice/node_modules/.pnpm/puppeteer-core@25.5.0/node_modules/puppeteer-core/lib/puppeteer/node/BrowserLauncher.js:67:28)\n    at async ChromeLauncher.launch (/home/mie-kely/invoice/node_modules/.pnpm/puppeteer-core@25.5.0/node_modules/puppeteer-core/src/node/ChromeLauncher.ts:59:12)\n    at async PuppeteerNode.launch (/home/mie-kely/invoice/node_modules/.pnpm/puppeteer-core@25.5.0/node_modules/puppeteer-core/src/node/PuppeteerNode.ts:143:12)\n    at async InvoicePdfService.generatePDF (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:198:17)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:288:25)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)"
+  },
+  "invoiceNumber": "INV-20260806-4987"
+}
+{"error":{"message":"Could not find Chrome (ver. 151.0.7922.71). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /home/mie-kely/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.","name":"Error","stack":"Error: Could not find Chrome (ver. 151.0.7922.71). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /home/mie-kely/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.\n    at ChromeLauncher.resolveExecutablePath (/home/mie-kely/invoice/node_modules/.pnpm/puppeteer-core@25.5.0/node_modules/puppeteer-core/lib/puppeteer/node/BrowserLauncher.js:319:19)\n    at async ChromeLauncher.computeLaunchArguments (/home/mie-kely/invoice/node_modules/.pnpm/puppeteer-core@25.5.0/node_modules/puppeteer-core/src/node/ChromeLauncher.ts:140:11)\n    at async ChromeLauncher.launch (/home/mie-kely/invoice/node_modules/.pnpm/puppeteer-core@25.5.0/node_modules/puppeteer-core/lib/puppeteer/node/BrowserLauncher.js:67:28)\n    at async ChromeLauncher.launch (/home/mie-kely/invoice/node_modules/.pnpm/puppeteer-core@25.5.0/node_modules/puppeteer-core/src/node/ChromeLauncher.ts:59:12)\n    at async PuppeteerNode.launch (/home/mie-kely/invoice/node_modules/.pnpm/puppeteer-core@25.5.0/node_modules/puppeteer-core/src/node/PuppeteerNode.ts:143:12)\n    at async InvoicePdfService.generatePDF (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:198:17)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:288:25)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)"},"invoiceNumber":"INV-20260806-4987","level":"error","message":"Failed to generate PDF","timestamp":"2026-08-10 12:06:33"}
+2026-08-10 12:06:33 [ERROR] Failed to generate PDF document
+Metadata: {
+  "statusCode": 500,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/export",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "Error: Failed to generate PDF document\n    at InvoicePdfService.generatePDF (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:248:13)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:288:25)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)"
+}
+{"ip":"::1","level":"error","message":"Failed to generate PDF document","method":"POST","stack":"Error: Failed to generate PDF document\n    at InvoicePdfService.generatePDF (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:248:13)\n    at async InvoicePdfService.exportInvoice (/home/mie-kely/invoice/src/services/invoice.pdf.service.ts:288:25)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.pdf.controller.ts:45:28)","statusCode":500,"timestamp":"2026-08-10 12:06:33","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/export"}
+2026-08-10 12:21:18 [ERROR] Validation failed
+Metadata: {
+  "statusCode": 400,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/export",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+  "errors": {}
+}
+{"errors":{},"ip":"::1","level":"error","message":"Validation failed","method":"POST","stack":"Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","statusCode":400,"timestamp":"2026-08-10 12:21:18","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/export"}
+2026-08-10 12:23:25 [ERROR] Validation failed
+Metadata: {
+  "statusCode": 400,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/export",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+  "errors": {
+    "params": [
+      "Invalid input: expected object, received undefined"
+    ],
+    "query": [
+      "Invalid input: expected object, received undefined"
+    ]
+  }
+}
+{"errors":{"params":["Invalid input: expected object, received undefined"],"query":["Invalid input: expected object, received undefined"]},"ip":"::1","level":"error","message":"Validation failed","method":"POST","stack":"Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","statusCode":400,"timestamp":"2026-08-10 12:23:25","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/export"}
+2026-08-10 12:28:28 [ERROR] Validation failed
+Metadata: {
+  "statusCode": 400,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/export",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:32:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+  "errors": {
+    "params": [
+      "Invalid input: expected object, received undefined"
+    ],
+    "query": [
+      "Invalid input: expected object, received undefined"
+    ]
+  }
+}
+{"errors":{"params":["Invalid input: expected object, received undefined"],"query":["Invalid input: expected object, received undefined"]},"ip":"::1","level":"error","message":"Validation failed","method":"POST","stack":"Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:32:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","statusCode":400,"timestamp":"2026-08-10 12:28:28","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/export"}
+2026-08-10 12:31:32 [ERROR] Cannot set property query of #<IncomingMessage> which has only a getter
+Metadata: {
+  "statusCode": 500,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/export",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:80:13)\n    at Layer.handleRequest (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/lib/layer.js:152:17)\n    at next (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/lib/route.js:157:13)\n    at Route.dispatch (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/lib/route.js:117:3)\n    at handle (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/index.js:435:11)\n    at Layer.handleRequest (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/lib/layer.js:152:17)\n    at /home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/index.js:295:15\n    at param (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/index.js:600:14)\n    at param (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/index.js:610:14)\n    at processParams (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/index.js:664:3)"
+}
+{"ip":"::1","level":"error","message":"Cannot set property query of #<IncomingMessage> which has only a getter","method":"POST","stack":"TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:80:13)\n    at Layer.handleRequest (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/lib/layer.js:152:17)\n    at next (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/lib/route.js:157:13)\n    at Route.dispatch (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/lib/route.js:117:3)\n    at handle (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/index.js:435:11)\n    at Layer.handleRequest (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/lib/layer.js:152:17)\n    at /home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/index.js:295:15\n    at param (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/index.js:600:14)\n    at param (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/index.js:610:14)\n    at processParams (/home/mie-kely/invoice/node_modules/.pnpm/router@2.2.0_supports-color@7.2.0/node_modules/router/index.js:664:3)","statusCode":500,"timestamp":"2026-08-10 12:31:32","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/export"}
+2026-08-10 12:45:02 [ERROR] Validation failed
+Metadata: {
+  "statusCode": 400,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/download?format=A4",
+  "method": "GET",
+  "ip": "::1",
+  "stack": "Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:36:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+  "errors": {}
+}
+{"errors":{},"ip":"::1","level":"error","message":"Validation failed","method":"GET","stack":"Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:36:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","statusCode":400,"timestamp":"2026-08-10 12:45:02","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/download?format=A4"}
+2026-08-10 12:46:33 [ERROR] Validation failed
+Metadata: {
+  "statusCode": 400,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/download?format=A4",
+  "method": "GET",
+  "ip": "::1",
+  "stack": "Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:36:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+  "errors": {}
+}
+{"errors":{},"ip":"::1","level":"error","message":"Validation failed","method":"GET","stack":"Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:36:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","statusCode":400,"timestamp":"2026-08-10 12:46:33","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/download?format=A4"}
+2026-08-10 12:47:39 [ERROR] Validation failed
+Metadata: {
+  "statusCode": 400,
+  "url": "/invoices/cmsh9kegr0000vwhfcg9b5mxc/download?format=A4",
+  "method": "GET",
+  "ip": "::1",
+  "stack": "Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:36:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+  "errors": {}
+}
+{"errors":{},"ip":"::1","level":"error","message":"Validation failed","method":"GET","stack":"Error: Validation failed\n    at <anonymous> (/home/mie-kely/invoice/src/middlewares/validation.middleware.ts:36:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","statusCode":400,"timestamp":"2026-08-10 12:47:39","url":"/invoices/cmsh9kegr0000vwhfcg9b5mxc/download?format=A4"}

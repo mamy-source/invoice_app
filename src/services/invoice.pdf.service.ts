@@ -9,13 +9,14 @@ import InvoiceRepository from "../repositories/invoice.repository.js";
 import { AppError } from "../middlewares/error.middleware.js";
 import logger from "../libs/logger.lib.js";
 import { generateInvoiceNumber } from "../utils/generate-invoice-number.js";
+import { env } from "../config/env.js";
 
 // Constants
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const PDF_DIR = path.join(process.cwd(), 'pdf', 'invoices');
-const TEMPLATE_PATH = path.join(__dirname, '../templates/invoice-template.hbs');
+const TEMPLATE_PATH = path.join(__dirname, '..','templates', 'invoice.hbs');
 
 // Ensure PDF directory exists
 if (!existsSync(PDF_DIR)) {
@@ -126,7 +127,6 @@ interface InvoiceWithProducts extends InvoiceData {
 interface DownloadOptions {
     format?: PdfFormat;
     filename?: string;
-    deleteAfterDownload?: boolean;
     pdfUrl?: string;
   }
   
@@ -176,8 +176,12 @@ class InvoicePdfService {
         status: invoice.status || 'DRAFT'
       });
     } catch (error) {
-      logger.error("Failed to generate HTML", { error, invoiceId: invoice.id });
-      throw new AppError("Failed to generate invoice HTML", 500);
+      console.error("GENERATE HTML ERROR:", error);
+
+      throw new AppError(
+        "Failed to generate invoice HTML",
+        500
+      );
     }
   }
 
@@ -194,6 +198,7 @@ class InvoicePdfService {
     try {
       browser = await puppeteer.launch({
         headless: true,
+        executablePath: env.puppeteerExecutablePath,
         args: [
           '--no-sandbox',
           '--disable-setuid-sandbox',
@@ -231,8 +236,21 @@ class InvoicePdfService {
 
       return pdfPath;
     } catch (error) {
-      logger.error("Failed to generate PDF", { error, invoiceNumber });
-      throw new AppError("Failed to generate PDF document", 500);
+      logger.error("Failed to generate PDF", {
+        error: error instanceof Error
+          ? {
+              name: error.name,
+              message: error.message,
+              stack: error.stack,
+            }
+          : error,
+        invoiceNumber,
+      });
+    
+      throw new AppError(
+        "Failed to generate PDF document",
+        500
+      );
     } finally {
       if (browser) {
         await browser.close();
@@ -246,65 +264,65 @@ class InvoicePdfService {
   async exportInvoice(
     invoiceId: string,
     format: PdfFormat = 'A4'
-  ): Promise<{ pdfPath: string; filename: string }> {
+  ): Promise<{ pdfPath: string; filename: string; invoice: InvoiceData }> {
     try {
-      // Validate input
-      if (!invoiceId) {
-        throw new AppError("Invoice ID is required", 400);
-      }
+        // Validate input
+        if (!invoiceId) {
+            throw new AppError("Invoice ID is required", 400);
+        }
 
-      // Fetch invoice data
-      const invoice = await this.invoiceRepository.findById(invoiceId);
-      
-      if (!invoice) {
-        throw new AppError("Invoice not found", 404);
-      }
+        // Fetch invoice data
+        const invoice = await this.invoiceRepository.findById(invoiceId);
+        
+        if (!invoice) {
+            throw new AppError("Invoice not found", 404);
+        }
 
-      // Validate invoice data
-      if (!invoice.invoiceNumber) {
-        throw new AppError("Invoice number is missing", 400);
-      }
+        // Validate invoice data
+        if (!invoice.invoiceNumber) {
+            throw new AppError("Invoice number is missing", 400);
+        }
 
-      // Generate HTML
-      const html = await this.generateHTML(invoice);
+        // Generate HTML
+        const html = await this.generateHTML(invoice);
 
-      // Generate PDF
-      const pdfPath = await this.generatePDF(
-        html, 
-        invoice.invoiceNumber,
-        format
-      );
+        // Generate PDF
+        const pdfPath = await this.generatePDF(
+            html, 
+            invoice.invoiceNumber,
+            format
+        );
 
-      // Update invoice with PDF path
-      await this.invoiceRepository.update(invoiceId, {
-        pdfUrl: pdfPath
-      });
+        // Update invoice with PDF path
+        await this.invoiceRepository.update(invoiceId, {
+            pdfUrl: pdfPath
+        });
 
-      logger.info(`Invoice PDF generated successfully`, {
-        invoiceId,
-        invoiceNumber: invoice.invoiceNumber,
-        pdfPath
-      });
+        logger.info(`Invoice PDF generated successfully`, {
+            invoiceId,
+            invoiceNumber: invoice.invoiceNumber,
+            pdfPath
+        });
 
-      return {
-        pdfPath,
-        filename: `${invoice.invoiceNumber}.pdf`
-      };
+        return {
+            pdfPath,
+            filename: `${invoice.invoiceNumber}.pdf`,
+            invoice // Return the invoice data as well
+        };
     } catch (error) {
-      // Re-throw AppErrors, wrap others
-      if (error instanceof AppError) {
-        throw error;
-      }
-      
-      logger.error("Failed to export invoice", { 
-        error, 
-        invoiceId 
-      });
-      
-      throw new AppError("Failed to export invoice", 500);
+        // Re-throw AppErrors, wrap others
+        if (error instanceof AppError) {
+            throw error;
+        }
+        
+        logger.error("Failed to export invoice", { 
+            error, 
+            invoiceId 
+        });
+        
+        throw new AppError("Failed to export invoice", 500);
     }
   }
-
   /**
    * Generate PDF for multiple invoices (bulk export)
    */
@@ -349,108 +367,85 @@ class InvoicePdfService {
     }
   }
 
-    /**
+  /**
    * Download invoice PDF
    * Returns file stream and metadata for download
    */
-    async downloadInvoice(
-        invoiceId: string,
-        options: DownloadOptions = {}
-      ): Promise<DownloadResult> {
-        try {
-          const {
+  async downloadInvoice(
+    invoiceId: string,
+    options: Partial<DownloadOptions> = {}
+  ): Promise<DownloadResult> {
+    try {
+        const {
             format = 'A4',
             filename,
-            deleteAfterDownload = false
-          } = options;
-    
-          // Validate input
-          if (!invoiceId) {
-            throw new AppError("Invoice ID is required", 400);
-          }
-    
-          // Fetch invoice data
-          const invoice = await this.invoiceRepository.findById(invoiceId);
-          
-          if (!invoice) {
-            throw new AppError("Invoice not found", 404);
-          }
-    
-          // Check if PDF already exists
-          let pdfPath = (invoice as InvoiceWithProducts).pdfUrl;
+        } = options;
 
-          let pdfExists = false;
-    
-          if (pdfPath) {
+        // Validate input
+        if (!invoiceId) {
+            throw new AppError("Invoice ID is required", 400);
+        }
+
+        // Fetch invoice data
+        const invoice = await this.invoiceRepository.findById(invoiceId);
+        
+        if (!invoice) {
+            throw new AppError("Invoice not found", 404);
+        }
+
+        // Check if PDF already exists
+        let pdfPath = (invoice as InvoiceWithProducts).pdfUrl;
+        let pdfExists = false;
+
+        if (pdfPath) {
             try {
-              await fs.access(pdfPath);
-              pdfExists = true;
+                await fs.access(pdfPath);
+                pdfExists = true;
             } catch {
-              // PDF doesn't exist, regenerate
-              pdfPath = undefined;
+                // PDF doesn't exist, regenerate
+                pdfPath = undefined;
             }
-          }
-    
-          // Generate PDF if it doesn't exist
-          if (!pdfExists || !pdfPath) {
+        }
+
+        // Generate PDF if it doesn't exist
+        if (!pdfExists || !pdfPath) {
             const result = await this.exportInvoice(invoiceId, format);
             pdfPath = result.pdfPath;
-          }
-    
-          // Get file stats
-          const stats = await fs.stat(pdfPath);
-    
-          // Determine filename
-          const finalFilename = filename || `${invoice.invoiceNumber}.pdf`;
-    
-          // If deleteAfterDownload is true, we'll return the file and delete it
-          if (deleteAfterDownload) {
-            // Read file content
-            const fileContent = await fs.readFile(pdfPath);
-            
-            // Delete the file
-            await fs.unlink(pdfPath);
-            
-            logger.info(`PDF downloaded and deleted`, {
-              invoiceId,
-              invoiceNumber: invoice.invoiceNumber,
-              filename: finalFilename
-            });
-    
-            return {
-              filename: finalFilename,
-              path: pdfPath,
-              size: fileContent.length,
-              contentType: 'application/pdf'
-            };
-          }
-    
-          logger.info(`PDF downloaded successfully`, {
+        }
+
+        // Get file stats
+        const stats = await fs.stat(pdfPath);
+
+        // Determine filename - handle undefined properly
+        const finalFilename = filename || `${invoice.invoiceNumber}.pdf`;
+
+        logger.info(`PDF downloaded successfully`, {
             invoiceId,
             invoiceNumber: invoice.invoiceNumber,
             filename: finalFilename
-          });
-    
-          return {
+        });
+
+        return {
             filename: finalFilename,
             path: pdfPath,
             size: stats.size,
             contentType: 'application/pdf'
-          };
-        } catch (error) {
-          if (error instanceof AppError) {
+        };
+    } catch (error) {
+        if (error instanceof AppError) {
             throw error;
-          }
-          
-          logger.error("Failed to download invoice", { 
+        }
+        
+        logger.error("Failed to download invoice", { 
             error, 
             invoiceId 
-          });
-          
-          throw new AppError("Failed to download invoice", 500);
-        }
-      }
-    
+        });
+        
+        throw new AppError("Failed to download invoice", 500);
+    }
+  }
+
+
 }
 
 export default InvoicePdfService;

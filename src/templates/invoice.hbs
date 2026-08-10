@@ -139,6 +139,7 @@
             font-size: 16px;
             color: #2c3e50;
             font-weight: 500;
+            word-break: break-word;
         }
         
         .client-info .client-email {
@@ -249,128 +250,270 @@
         /* ===== RESPONSIVE BREAKPOINTS ===== */
         /* ============================================ */
         
-        /* --- THERMAL (58mm) & POS (80mm) --- */
-        @media print and (max-width: 80mm),
-               screen and (max-width: 400px) {
+        /* --- THERMAL (58mm) --- */
+        @media print and (max-width: 58mm),
+               screen and (max-width: 320px) {
             body {
-                padding: 8px;
+                padding: 2px;
                 background: #ffffff;
+                min-height: auto;
             }
             
             .invoice-container {
-                padding: 12px 10px;
+                padding: 6px 4px;
                 border-radius: 0;
                 box-shadow: none;
+                max-width: 100%;
             }
             
             .header {
                 flex-direction: column;
-                padding-bottom: 12px;
-                margin-bottom: 15px;
+                padding-bottom: 6px;
+                margin-bottom: 8px;
+                border-bottom-width: 2px;
             }
             
             .header-left h1 {
-                font-size: 20px;
+                font-size: 14px;
+                letter-spacing: 0.5px;
             }
             
             .header-left .subtitle {
-                font-size: 11px;
+                font-size: 8px;
+                margin-top: 2px;
             }
             
             .header-right {
                 text-align: left;
                 margin-left: 0;
-                margin-top: 8px;
+                margin-top: 4px;
                 width: 100%;
             }
             
             .header-right .invoice-number {
-                font-size: 16px;
-            }
-            
-            .header-right .invoice-meta {
-                font-size: 11px;
-            }
-            
-            .status-badge {
-                font-size: 10px;
-                padding: 3px 12px;
-            }
-            
-            .client-info {
-                padding: 12px 14px;
-                margin-bottom: 15px;
-            }
-            
-            .client-info h3 {
-                font-size: 11px;
-            }
-            
-            .client-info p {
-                font-size: 13px;
-                word-break: break-all;
-            }
-            
-            table {
-                font-size: 11px;
-            }
-            
-            table thead th,
-            table tbody td {
-                padding: 8px 8px;
-            }
-            
-            table thead th {
-                font-size: 10px;
-            }
-            
-            .totals-amount {
-                font-size: 18px;
-            }
-            
-            .totals-label {
-                font-size: 13px;
-            }
-            
-            .footer {
-                font-size: 10px;
-                margin-top: 15px;
-                padding-top: 12px;
-            }
-            
-            .footer .brand {
-                font-size: 11px;
-            }
-        }
-        
-        /* --- POS (80mm) specific --- */
-        @media print and (min-width: 59mm) and (max-width: 80mm),
-               screen and (min-width: 401px) and (max-width: 600px) {
-            .invoice-container {
-                padding: 18px 16px;
-            }
-            
-            .header-left h1 {
-                font-size: 24px;
-            }
-            
-            table {
                 font-size: 12px;
             }
             
+            .header-right .invoice-meta {
+                font-size: 8px;
+                margin-top: 2px;
+            }
+            
+            .header-right .invoice-meta span {
+                display: inline;
+                margin-top: 0;
+                margin-right: 6px;
+            }
+            
+            .status-badge {
+                font-size: 7px;
+                padding: 1px 6px;
+                margin-top: 2px;
+                border-radius: 10px;
+            }
+            
+            .client-info {
+                padding: 6px 8px;
+                margin-bottom: 8px;
+                border-left-width: 2px;
+                border-radius: 4px;
+            }
+            
+            .client-info h3 {
+                font-size: 8px;
+                margin-bottom: 2px;
+            }
+            
+            .client-info p {
+                font-size: 10px;
+            }
+            
+            .table-responsive {
+                margin: 10px 0;
+            }
+            
+            table {
+                font-size: 8px;
+            }
+            
             table thead th,
             table tbody td {
-                padding: 10px 12px;
+                padding: 4px 3px;
+            }
+            
+            table thead th {
+                font-size: 7px;
+                letter-spacing: 0;
+                padding: 3px 3px;
+            }
+            
+            table tbody td {
+                padding: 3px 3px;
+            }
+            
+            .text-muted {
+                font-size: 6px;
+            }
+            
+            .totals {
+                margin-top: 8px;
+                padding-top: 8px;
+                border-top-width: 1px;
+            }
+            
+            .totals-label {
+                font-size: 10px;
             }
             
             .totals-amount {
-                font-size: 20px;
+                font-size: 14px;
+            }
+            
+            .footer {
+                font-size: 7px;
+                margin-top: 8px;
+                padding-top: 6px;
+            }
+            
+            .footer .brand {
+                font-size: 8px;
+            }
+            
+            /* Cacher les éléments non essentiels */
+            .footer p:last-child {
+                display: none;
+            }
+        }
+        
+        /* --- POS (80mm) --- */
+        @media print and (min-width: 59mm) and (max-width: 80mm),
+               screen and (min-width: 321px) and (max-width: 420px) {
+            body {
+                padding: 4px;
+                background: #ffffff;
+                min-height: auto;
+            }
+            
+            .invoice-container {
+                padding: 10px 8px;
+                border-radius: 0;
+                box-shadow: none;
+                max-width: 100%;
+            }
+            
+            .header {
+                flex-direction: column;
+                padding-bottom: 10px;
+                margin-bottom: 12px;
+                border-bottom-width: 2px;
+            }
+            
+            .header-left h1 {
+                font-size: 18px;
+            }
+            
+            .header-left .subtitle {
+                font-size: 10px;
+            }
+            
+            .header-right {
+                text-align: left;
+                margin-left: 0;
+                margin-top: 6px;
+                width: 100%;
+            }
+            
+            .header-right .invoice-number {
+                font-size: 14px;
+            }
+            
+            .header-right .invoice-meta {
+                font-size: 10px;
+            }
+            
+            .header-right .invoice-meta span {
+                display: inline;
+                margin-top: 0;
+                margin-right: 8px;
+            }
+            
+            .status-badge {
+                font-size: 8px;
+                padding: 2px 10px;
+                margin-top: 3px;
+            }
+            
+            .client-info {
+                padding: 8px 12px;
+                margin-bottom: 10px;
+                border-left-width: 3px;
+            }
+            
+            .client-info h3 {
+                font-size: 10px;
+            }
+            
+            .client-info p {
+                font-size: 12px;
+            }
+            
+            .table-responsive {
+                margin: 12px 0;
+            }
+            
+            table {
+                font-size: 10px;
+            }
+            
+            table thead th,
+            table tbody td {
+                padding: 6px 6px;
+            }
+            
+            table thead th {
+                font-size: 8px;
+                padding: 5px 6px;
+            }
+            
+            table tbody td {
+                padding: 5px 6px;
+            }
+            
+            .text-muted {
+                font-size: 8px;
+            }
+            
+            .totals {
+                margin-top: 10px;
+                padding-top: 10px;
+            }
+            
+            .totals-label {
+                font-size: 12px;
+            }
+            
+            .totals-amount {
+                font-size: 16px;
+            }
+            
+            .footer {
+                font-size: 9px;
+                margin-top: 12px;
+                padding-top: 10px;
+            }
+            
+            .footer .brand {
+                font-size: 10px;
+            }
+            
+            .footer p:last-child {
+                font-size: 8px;
             }
         }
         
         /* --- A5 --- */
         @media print and (min-width: 81mm) and (max-width: 148mm),
-               screen and (min-width: 601px) and (max-width: 768px) {
+               screen and (min-width: 421px) and (max-width: 768px) {
             .invoice-container {
                 padding: 24px 22px;
             }
@@ -400,30 +543,43 @@
         /* ===== PRINT STYLES ===== */
         @media print {
             body {
-                background: #ffffff;
-                padding: 0;
-                min-height: auto;
+                background: #ffffff !important;
+                padding: 0 !important;
+                min-height: auto !important;
+                margin: 0 !important;
             }
             
             .invoice-container {
-                border-radius: 0;
-                box-shadow: none;
-                padding: 20px;
-                max-width: 100%;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                padding: 15px !important;
+                max-width: 100% !important;
+                background: #ffffff !important;
             }
             
             table tbody tr:hover {
-                background: transparent;
+                background: transparent !important;
             }
             
             .status-badge {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
             }
             
             table thead {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            
+            /* Éviter les coupures de page */
+            .invoice-container {
+                page-break-inside: avoid;
+            }
+            
+            .header, .client-info, .table-responsive, .totals, .footer {
+                page-break-inside: avoid;
             }
         }
         
@@ -491,6 +647,74 @@
                 color: #e0e0e0;
             }
         }
+        
+        /* ===== THERMAL SPECIFIC - Optimisation pour impression thermique ===== */
+        @media print and (max-width: 58mm) {
+            /* Optimisation pour imprimante thermique */
+            body {
+                background: #ffffff !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            
+            .invoice-container {
+                padding: 3px 2px !important;
+            }
+            
+            /* Supprimer les ombres et bordures inutiles */
+            .client-info {
+                border-left: none !important;
+                border-left: 2px solid #2c3e50 !important;
+            }
+            
+            /* Réduire les espaces */
+            .header, .client-info, .table-responsive, .totals, .footer {
+                margin-bottom: 4px !important;
+                padding-bottom: 4px !important;
+            }
+            
+            /* Ajuster la taille de la police pour la thermique */
+            table {
+                font-size: 7px !important;
+            }
+            
+            table thead th, table tbody td {
+                padding: 2px 2px !important;
+            }
+            
+            /* Optimiser l'utilisation de l'espace */
+            .header-left h1 {
+                font-size: 12px !important;
+            }
+            
+            .totals-amount {
+                font-size: 12px !important;
+            }
+        }
+        
+        /* ===== POS SPECIFIC - Optimisation pour impression POS ===== */
+        @media print and (min-width: 59mm) and (max-width: 80mm) {
+            /* Optimisation pour imprimante POS */
+            body {
+                padding: 0 !important;
+                margin: 0 !important;
+                background: #ffffff !important;
+            }
+            
+            .invoice-container {
+                padding: 6px 4px !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+            }
+            
+            .header-left h1 {
+                font-size: 16px !important;
+            }
+            
+            .totals-amount {
+                font-size: 14px !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -530,7 +754,7 @@
                     <tr>
                         <th>Produit / Product</th>
                         <th class="text-right">Qté</th>
-                        <th class="text-right">Prix unitaire</th>
+                        <th class="text-right">Prix</th>
                         <th class="text-right">Total</th>
                     </tr>
                 </thead>
@@ -539,7 +763,7 @@
                     <tr>
                         <td>
                             <strong>{{name}}</strong>
-                            <div class="text-muted">Ref: #{{@index}}</div>
+                            <div class="text-muted">#{{@index}}</div>
                         </td>
                         <td class="text-right">{{quantity}}</td>
                         <td class="text-right">{{formatCurrency unitPrice}}</td>
