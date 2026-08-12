@@ -1,0 +1,36 @@
+2026-08-09 17:50:31 [ERROR] 
+Invalid `this.prisma.invoice.create()` invocation in
+/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34
+
+  25   total: number,
+  26   invoiceNumber: string
+  27 ): Promise<InvoiceWithProducts> {
+→ 28   return this.prisma.invoice.create(
+Database error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms
+    (pool connections: active=0 idle=0 limit=10)`
+Metadata: {
+  "statusCode": 500,
+  "url": "/api/invoices/",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)"
+}
+{"ip":"::1","level":"error","message":"\nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`","method":"POST","stack":"PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)","statusCode":500,"timestamp":"2026-08-09 17:50:31","url":"/api/invoices/"}
+2026-08-09 17:50:49 [ERROR] 
+Invalid `this.prisma.invoice.create()` invocation in
+/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34
+
+  25   total: number,
+  26   invoiceNumber: string
+  27 ): Promise<InvoiceWithProducts> {
+→ 28   return this.prisma.invoice.create(
+Database error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms
+    (pool connections: active=0 idle=0 limit=10)`
+Metadata: {
+  "statusCode": 500,
+  "url": "/api/invoices/",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)"
+}
+{"ip":"::1","level":"error","message":"\nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`","method":"POST","stack":"PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)","statusCode":500,"timestamp":"2026-08-09 17:50:49","url":"/api/invoices/"}

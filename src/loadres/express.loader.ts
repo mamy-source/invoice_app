@@ -11,9 +11,19 @@ import { env } from "../config/env.js";
 import logger from "../libs/logger.lib.js";
 import { generalRateLimit } from "../middlewares/rate-limite.middleware.js";
 
+//for Public/index.html
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 function expressLoader(app: Express): void {
 
+
+    //public html
+    app.use(express.static(path.join(__dirname, "../public")));
+    
     //Body parsers
     app.use(express.json());
     app.use(express.urlencoded({ extended: true })); 
