@@ -780,3 +780,222 @@ Metadata: {
 {"level":"info","message":"Error handler initialized","timestamp":"2026-08-12 08:43:18"}
 {"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-12 08:43:18"}
 {"level":"info","message":"Application initialized successfully","timestamp":"2026-08-12 08:43:18"}
+2026-08-12 10:13:16 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-12 10:13:16"}
+2026-08-12 10:13:16 [INFO]  Database loader initialized
+2026-08-12 10:13:16 [INFO] Express loader initialized
+2026-08-12 10:13:16 [INFO]  Express loader initialized
+2026-08-12 10:13:16 [INFO] Routes configured
+2026-08-12 10:13:16 [INFO] Routes loader initialized
+2026-08-12 10:13:16 [INFO] Error handler initialized
+2026-08-12 10:13:16 [INFO] All loaders completed successfully
+2026-08-12 10:13:16 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-12 10:13:16"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-12 10:13:16"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-12 10:13:16"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-12 10:13:16"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-12 10:13:16"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-12 10:13:16"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-12 10:13:16"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-12 10:13:16"}
+2026-08-12 10:13:30 [INFO] Incoming request: GET /favicon.ico
+{"level":"info","message":"Incoming request: GET /favicon.ico","timestamp":"2026-08-12 10:13:30"}
+2026-08-12 10:25:48 [INFO] Incoming request: POST /api/invoices/
+{"level":"info","message":"Incoming request: POST /api/invoices/","timestamp":"2026-08-12 10:25:48"}
+2026-08-12 10:25:48 [INFO] Creating new invoice
+Metadata: {
+  "clientEmail": "test2@gmail.com"
+}
+{"clientEmail":"test2@gmail.com","level":"info","message":"Creating new invoice","timestamp":"2026-08-12 10:25:48"}
+2026-08-12 10:25:58 [ERROR] 
+Invalid `this.prisma.invoice.create()` invocation in
+/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34
+
+  25   total: number,
+  26   invoiceNumber: string
+  27 ): Promise<InvoiceWithProducts> {
+→ 28   return this.prisma.invoice.create(
+Database error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms
+    (pool connections: active=0 idle=0 limit=10)`
+Metadata: {
+  "statusCode": 500,
+  "url": "/api/invoices/",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)"
+}
+{"ip":"::1","level":"error","message":"\nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`","method":"POST","stack":"PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)","statusCode":500,"timestamp":"2026-08-12 10:25:58","url":"/api/invoices/"}
+2026-08-12 10:26:06 [INFO] Incoming request: POST /api/invoices/
+{"level":"info","message":"Incoming request: POST /api/invoices/","timestamp":"2026-08-12 10:26:06"}
+2026-08-12 10:26:06 [INFO] Creating new invoice
+Metadata: {
+  "clientEmail": "test2@gmail.com"
+}
+{"clientEmail":"test2@gmail.com","level":"info","message":"Creating new invoice","timestamp":"2026-08-12 10:26:06"}
+2026-08-12 10:26:16 [ERROR] 
+Invalid `this.prisma.invoice.create()` invocation in
+/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34
+
+  25   total: number,
+  26   invoiceNumber: string
+  27 ): Promise<InvoiceWithProducts> {
+→ 28   return this.prisma.invoice.create(
+Database error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10001ms
+    (pool connections: active=0 idle=0 limit=10)`
+Metadata: {
+  "statusCode": 500,
+  "url": "/api/invoices/",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10001ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)"
+}
+{"ip":"::1","level":"error","message":"\nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10001ms\n    (pool connections: active=0 idle=0 limit=10)`","method":"POST","stack":"PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10001ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)","statusCode":500,"timestamp":"2026-08-12 10:26:16","url":"/api/invoices/"}
+2026-08-12 10:27:05 [INFO] Incoming request: POST /api/invoices/
+{"level":"info","message":"Incoming request: POST /api/invoices/","timestamp":"2026-08-12 10:27:05"}
+2026-08-12 10:27:05 [INFO] Creating new invoice
+Metadata: {
+  "clientEmail": "test2@gmail.com"
+}
+{"clientEmail":"test2@gmail.com","level":"info","message":"Creating new invoice","timestamp":"2026-08-12 10:27:05"}
+2026-08-12 10:27:15 [ERROR] 
+Invalid `this.prisma.invoice.create()` invocation in
+/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34
+
+  25   total: number,
+  26   invoiceNumber: string
+  27 ): Promise<InvoiceWithProducts> {
+→ 28   return this.prisma.invoice.create(
+Database error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms
+    (pool connections: active=0 idle=0 limit=10)`
+Metadata: {
+  "statusCode": 500,
+  "url": "/api/invoices/",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)"
+}
+{"ip":"::1","level":"error","message":"\nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`","method":"POST","stack":"PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)","statusCode":500,"timestamp":"2026-08-12 10:27:15","url":"/api/invoices/"}
+2026-08-12 10:27:52 [INFO] Incoming request: POST /api/invoices/
+{"level":"info","message":"Incoming request: POST /api/invoices/","timestamp":"2026-08-12 10:27:52"}
+2026-08-12 10:27:52 [INFO] Creating new invoice
+Metadata: {
+  "clientEmail": "test2@gmail.com"
+}
+{"clientEmail":"test2@gmail.com","level":"info","message":"Creating new invoice","timestamp":"2026-08-12 10:27:52"}
+2026-08-12 10:27:52 [INFO] Invoice created successfully
+Metadata: {
+  "invoiceId": "cmspropa40000rnhf17htupk3",
+  "invoiceNumber": "INV-20260812-7226"
+}
+{"invoiceId":"cmspropa40000rnhf17htupk3","invoiceNumber":"INV-20260812-7226","level":"info","message":"Invoice created successfully","timestamp":"2026-08-12 10:27:52"}
+2026-08-12 10:27:52 [INFO] Incoming request: POST /api/invoices/cmspropa40000rnhf17htupk3/export?format=A4
+{"level":"info","message":"Incoming request: POST /api/invoices/cmspropa40000rnhf17htupk3/export?format=A4","timestamp":"2026-08-12 10:27:52"}
+2026-08-12 10:27:52 [INFO] Exportation de la facture cmspropa40000rnhf17htupk3 au format A4
+{"level":"info","message":"Exportation de la facture cmspropa40000rnhf17htupk3 au format A4","timestamp":"2026-08-12 10:27:52"}
+2026-08-12 10:27:54 [INFO] Invoice PDF generated successfully
+Metadata: {
+  "invoiceId": "cmspropa40000rnhf17htupk3",
+  "invoiceNumber": "INV-20260812-7226",
+  "pdfPath": "/home/mie-kely/invoice/pdf/invoices/INV-20260812-7226.pdf"
+}
+{"invoiceId":"cmspropa40000rnhf17htupk3","invoiceNumber":"INV-20260812-7226","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260812-7226.pdf","timestamp":"2026-08-12 10:27:54"}
+2026-08-12 10:27:54 [INFO] Incoming request: POST /api/invoices/cmspropa40000rnhf17htupk3/email?format=A4
+{"level":"info","message":"Incoming request: POST /api/invoices/cmspropa40000rnhf17htupk3/email?format=A4","timestamp":"2026-08-12 10:27:54"}
+2026-08-12 10:27:54 [INFO] Envoi de la facture cmspropa40000rnhf17htupk3 par email
+Metadata: {
+  "to": "client",
+  "format": "A4"
+}
+{"format":"A4","level":"info","message":"Envoi de la facture cmspropa40000rnhf17htupk3 par email","timestamp":"2026-08-12 10:27:54","to":"client"}
+2026-08-12 10:27:55 [INFO] Invoice PDF generated successfully
+Metadata: {
+  "invoiceId": "cmspropa40000rnhf17htupk3",
+  "invoiceNumber": "INV-20260812-7226",
+  "pdfPath": "/home/mie-kely/invoice/pdf/invoices/INV-20260812-7226.pdf"
+}
+{"invoiceId":"cmspropa40000rnhf17htupk3","invoiceNumber":"INV-20260812-7226","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260812-7226.pdf","timestamp":"2026-08-12 10:27:55"}
+2026-08-12 10:28:08 [INFO] Email sent successfully
+Metadata: {
+  "to": "test2@gmail.com",
+  "subject": "Facture #INV-20260812-7226",
+  "messageId": "<80550fcf-1b18-37a9-bcf0-39caecc1c5d1@example.com>"
+}
+{"level":"info","message":"Email sent successfully","messageId":"<80550fcf-1b18-37a9-bcf0-39caecc1c5d1@example.com>","subject":"Facture #INV-20260812-7226","timestamp":"2026-08-12 10:28:08","to":"test2@gmail.com"}
+2026-08-12 10:28:08 [INFO] Invoice email sent successfully
+Metadata: {
+  "invoiceId": "cmspropa40000rnhf17htupk3",
+  "invoiceNumber": "INV-20260812-7226",
+  "to": "test2@gmail.com"
+}
+{"invoiceId":"cmspropa40000rnhf17htupk3","invoiceNumber":"INV-20260812-7226","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-12 10:28:08","to":"test2@gmail.com"}
+2026-08-12 10:28:08 [INFO] Incoming request: GET /api/invoices/cmspropa40000rnhf17htupk3/download?format=A4
+{"level":"info","message":"Incoming request: GET /api/invoices/cmspropa40000rnhf17htupk3/download?format=A4","timestamp":"2026-08-12 10:28:08"}
+2026-08-12 10:28:08 [INFO] Téléchargement de la facture cmspropa40000rnhf17htupk3 (format: A4)
+{"level":"info","message":"Téléchargement de la facture cmspropa40000rnhf17htupk3 (format: A4)","timestamp":"2026-08-12 10:28:08"}
+2026-08-12 10:28:09 [INFO] Invoice PDF generated successfully
+Metadata: {
+  "invoiceId": "cmspropa40000rnhf17htupk3",
+  "invoiceNumber": "INV-20260812-7226",
+  "pdfPath": "/home/mie-kely/invoice/pdf/invoices/INV-20260812-7226.pdf"
+}
+{"invoiceId":"cmspropa40000rnhf17htupk3","invoiceNumber":"INV-20260812-7226","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260812-7226.pdf","timestamp":"2026-08-12 10:28:09"}
+2026-08-12 10:28:09 [INFO] PDF downloaded successfully
+Metadata: {
+  "invoiceId": "cmspropa40000rnhf17htupk3",
+  "invoiceNumber": "INV-20260812-7226",
+  "filename": "INV-20260812-7226.pdf"
+}
+{"filename":"INV-20260812-7226.pdf","invoiceId":"cmspropa40000rnhf17htupk3","invoiceNumber":"INV-20260812-7226","level":"info","message":"PDF downloaded successfully","timestamp":"2026-08-12 10:28:09"}
+2026-08-12 10:29:38 [INFO] Incoming request: POST /api/invoices/
+{"level":"info","message":"Incoming request: POST /api/invoices/","timestamp":"2026-08-12 10:29:38"}
+2026-08-12 10:29:38 [INFO] Creating new invoice
+Metadata: {
+  "clientEmail": "test3@gmail.com"
+}
+{"clientEmail":"test3@gmail.com","level":"info","message":"Creating new invoice","timestamp":"2026-08-12 10:29:38"}
+2026-08-12 10:29:38 [INFO] Invoice created successfully
+Metadata: {
+  "invoiceId": "cmsprqzo80001rnhfxm0secid",
+  "invoiceNumber": "INV-20260812-7386"
+}
+{"invoiceId":"cmsprqzo80001rnhfxm0secid","invoiceNumber":"INV-20260812-7386","level":"info","message":"Invoice created successfully","timestamp":"2026-08-12 10:29:38"}
+2026-08-12 10:29:38 [INFO] Incoming request: POST /api/invoices/cmsprqzo80001rnhfxm0secid/export?format=POS
+{"level":"info","message":"Incoming request: POST /api/invoices/cmsprqzo80001rnhfxm0secid/export?format=POS","timestamp":"2026-08-12 10:29:38"}
+2026-08-12 10:29:38 [INFO] Exportation de la facture cmsprqzo80001rnhfxm0secid au format POS
+{"level":"info","message":"Exportation de la facture cmsprqzo80001rnhfxm0secid au format POS","timestamp":"2026-08-12 10:29:38"}
+2026-08-12 10:29:39 [INFO] Invoice PDF generated successfully
+Metadata: {
+  "invoiceId": "cmsprqzo80001rnhfxm0secid",
+  "invoiceNumber": "INV-20260812-7386",
+  "pdfPath": "/home/mie-kely/invoice/pdf/invoices/INV-20260812-7386.pdf"
+}
+{"invoiceId":"cmsprqzo80001rnhfxm0secid","invoiceNumber":"INV-20260812-7386","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260812-7386.pdf","timestamp":"2026-08-12 10:29:39"}
+2026-08-12 10:29:39 [INFO] Incoming request: POST /api/invoices/cmsprqzo80001rnhfxm0secid/email?format=POS
+{"level":"info","message":"Incoming request: POST /api/invoices/cmsprqzo80001rnhfxm0secid/email?format=POS","timestamp":"2026-08-12 10:29:39"}
+2026-08-12 10:29:39 [INFO] Envoi de la facture cmsprqzo80001rnhfxm0secid par email
+Metadata: {
+  "to": "client",
+  "format": "POS"
+}
+{"format":"POS","level":"info","message":"Envoi de la facture cmsprqzo80001rnhfxm0secid par email","timestamp":"2026-08-12 10:29:39","to":"client"}
+2026-08-12 10:29:40 [INFO] Invoice PDF generated successfully
+Metadata: {
+  "invoiceId": "cmsprqzo80001rnhfxm0secid",
+  "invoiceNumber": "INV-20260812-7386",
+  "pdfPath": "/home/mie-kely/invoice/pdf/invoices/INV-20260812-7386.pdf"
+}
+{"invoiceId":"cmsprqzo80001rnhfxm0secid","invoiceNumber":"INV-20260812-7386","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260812-7386.pdf","timestamp":"2026-08-12 10:29:40"}
+2026-08-12 10:29:53 [INFO] Email sent successfully
+Metadata: {
+  "to": "test3@gmail.com",
+  "subject": "Facture #INV-20260812-7386",
+  "messageId": "<fd6214a7-306a-920f-f8e0-5a19486ec4b6@example.com>"
+}
+{"level":"info","message":"Email sent successfully","messageId":"<fd6214a7-306a-920f-f8e0-5a19486ec4b6@example.com>","subject":"Facture #INV-20260812-7386","timestamp":"2026-08-12 10:29:53","to":"test3@gmail.com"}
+2026-08-12 10:29:53 [INFO] Invoice email sent successfully
+Metadata: {
+  "invoiceId": "cmsprqzo80001rnhfxm0secid",
+  "invoiceNumber": "INV-20260812-7386",
+  "to": "test3@gmail.com"
+}
+{"invoiceId":"cmsprqzo80001rnhfxm0secid","invoiceNumber":"INV-20260812-7386","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-12 10:29:53","to":"test3@gmail.com"}

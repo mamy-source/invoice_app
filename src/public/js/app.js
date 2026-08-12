@@ -5,11 +5,13 @@ const API_PREFIX = '/api/invoices';
 let products = [];
 let currentInvoiceId = null;
 let isProcessing = false;
+let selectedFormat = 'A4';
 
 
 
 const form = document.getElementById('invoiceForm');
 const clientEmailInput = document.getElementById('clientEmail');
+const pdfFormatSelect = document.getElementById('pdfFormat');
 const productsContainer = document.getElementById('productsContainer');
 const emptyProducts = document.getElementById('emptyProducts');
 const addProductBtn = document.getElementById('addProductBtn');
@@ -231,7 +233,16 @@ async function apiCall(method, endpoint, data = null) {
     return result;
 }
 
+// Mettre à jour le format sélectionné
+pdfFormatSelect.addEventListener('change', () => {
+    selectedFormat = pdfFormatSelect.value;
+    console.log(` Format sélectionné: ${selectedFormat}`);
+});
 
+// Obtenir le format actuel
+function getSelectedFormat() {
+    return pdfFormatSelect ? pdfFormatSelect.value : 'A4';
+}
 
 function getInvoiceData() {
     const clientEmail = clientEmailInput.value.trim();
@@ -264,11 +275,13 @@ async function createInvoice() {
     const invoiceData = getInvoiceData();
     if (!invoiceData) return;
 
+    const format = getSelectedFormat(); 
+
     isProcessing = true;
     setLoading(true, 'Création de la facture...');
 
     try {
-        //Créer la facture via POST /
+        // Créer la facture via POST /
         const createResult = await apiCall('POST', '/', invoiceData);
         
         if (!createResult.success && createResult.statusCode === 400) {
@@ -282,29 +295,30 @@ async function createInvoice() {
         }
 
         currentInvoiceId = invoiceId;
-        showToast(' Facture créée avec succès !', 'success');
+        showToast('Facture créée avec succès !', 'success');
 
-        // Générer le PDF automatiquement
-        setLoading(true, 'Génération du PDF...');
-        await apiCall('POST', `/${invoiceId}/export?format=A4`);
-        showToast(' PDF généré avec succès !', 'success');
+        // Générer le PDF automatiquement avec le format choisi
+        setLoading(true, `Génération du PDF en format ${format}...`);
+        await apiCall('POST', `/${invoiceId}/export?format=${format}`);
+        showToast(`PDF (${format}) généré avec succès !`, 'success');
 
-        //  Envoyer l'email automatiquement avec le PDF
+        // Envoyer l'email automatiquement avec le PDF
         setLoading(true, 'Envoi de l\'email...');
-        await apiCall('POST', `/${invoiceId}/email?format=A4`);
+        await apiCall('POST', `/${invoiceId}/email?format=${format}`);
         showToast(`Facture envoyée à ${invoiceData.clientEmail} !`, 'success');
 
-        //  Ajouter à l'historique
+        // Ajouter à l'historique avec le format
         addInvoiceToHistory({
             id: invoiceId,
             clientEmail: invoiceData.clientEmail,
             total: invoiceData.total,
             products: invoiceData.products,
+            format: format,
             createdAt: new Date().toISOString()
         });
 
-        //Télécharger le PDF
-        const downloadUrl = `${API_BASE_URL}${API_PREFIX}/${invoiceId}/download?format=A4`;
+        // Télécharger le PDF
+        const downloadUrl = `${API_BASE_URL}${API_PREFIX}/${invoiceId}/download?format=${format}`;
         window.open(downloadUrl, '_blank');
 
         // Réinitialiser le formulaire
@@ -312,7 +326,7 @@ async function createInvoice() {
             resetForm();
         }, 2000);
 
-        showToast('Facture complète ! PDF généré et email envoyé.', 'success');
+        showToast(`Facture complète ! PDF (${format}) généré et email envoyé.`, 'success');
 
         return invoiceId;
     } catch (error) {
@@ -323,15 +337,16 @@ async function createInvoice() {
         isProcessing = false;
         setLoading(false);
     }
+
 }
-
-
 //Uniquement PDF
 async function generatePDFOnly() {
     if (isProcessing) return;
 
     const invoiceData = getInvoiceData();
     if (!invoiceData) return;
+
+    const format = getSelectedFormat();
 
     isProcessing = true;
     setLoading(true, 'Génération du PDF...');
@@ -347,8 +362,8 @@ async function generatePDFOnly() {
         const invoiceId = createResult.data?.id || createResult.id;
         currentInvoiceId = invoiceId;
 
-        //Générer le PDF
-        await apiCall('POST', `/${invoiceId}/export?format=A4`);
+        // Générer le PDF avec le format choisi
+        await apiCall('POST', `/${invoiceId}/export?format=${format}`);
 
         // Ajouter à l'historique
         addInvoiceToHistory({
@@ -356,14 +371,15 @@ async function generatePDFOnly() {
             clientEmail: invoiceData.clientEmail,
             total: invoiceData.total,
             products: invoiceData.products,
+            format: format,
             createdAt: new Date().toISOString()
         });
 
-        //Télécharger le PDF
-        const downloadUrl = `${API_BASE_URL}${API_PREFIX}/${invoiceId}/download?format=A4`;
+        // Télécharger le PDF
+        const downloadUrl = `${API_BASE_URL}${API_PREFIX}/${invoiceId}/download?format=${format}`;
         window.open(downloadUrl, '_blank');
 
-        showToast('PDF généré avec succès !', 'success');
+        showToast(`PDF (${format}) généré avec succès !`, 'success');
 
         setTimeout(() => {
             resetForm();
@@ -388,6 +404,12 @@ function resetForm() {
     
     // Réinitialiser l'email
     clientEmailInput.value = '';
+
+    //Réinitialiser le format à A4 (par défaut)
+    if (pdfFormatSelect) {
+        pdfFormatSelect.value = 'A4';
+        selectedFormat = 'A4';
+    }
     
     // Ajouter un produit par défaut
     addProduct();
