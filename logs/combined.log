@@ -45,3 +45,720 @@ Metadata: {
   "to": "new@example.com"
 }
 {"invoiceId":"cmsh9kegr0000vwhfcg9b5mxc","invoiceNumber":"INV-20260806-4987","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-09 16:54:52","to":"new@example.com"}
+2026-08-09 17:13:54 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:13:54"}
+2026-08-09 17:13:58 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:13:58"}
+2026-08-09 17:13:58 [INFO]  Database loader initialized
+2026-08-09 17:13:58 [INFO] Express loader initialized
+2026-08-09 17:13:58 [INFO]  Express loader initialized
+2026-08-09 17:13:58 [INFO] Routes configured
+2026-08-09 17:13:58 [INFO] Routes loader initialized
+2026-08-09 17:13:58 [INFO] Error handler initialized
+2026-08-09 17:13:58 [INFO] All loaders completed successfully
+2026-08-09 17:13:58 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:13:58"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:13:58"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:13:58"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:13:58"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:13:58"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:13:58"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:13:58"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:13:58"}
+2026-08-09 17:13:59 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:13:59"}
+2026-08-09 17:14:02 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:14:02"}
+2026-08-09 17:14:02 [INFO]  Database loader initialized
+2026-08-09 17:14:02 [INFO] Express loader initialized
+2026-08-09 17:14:02 [INFO]  Express loader initialized
+2026-08-09 17:14:02 [INFO] Routes configured
+2026-08-09 17:14:02 [INFO] Routes loader initialized
+2026-08-09 17:14:02 [INFO] Error handler initialized
+2026-08-09 17:14:02 [INFO] All loaders completed successfully
+2026-08-09 17:14:02 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:14:02"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:14:02"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:14:02"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:14:02"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:14:02"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:14:02"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:14:02"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:14:02"}
+2026-08-09 17:14:02 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:14:02"}
+2026-08-09 17:14:05 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:14:05"}
+2026-08-09 17:14:05 [INFO]  Database loader initialized
+2026-08-09 17:14:05 [INFO] Express loader initialized
+2026-08-09 17:14:05 [INFO]  Express loader initialized
+2026-08-09 17:14:05 [INFO] Routes configured
+2026-08-09 17:14:05 [INFO] Routes loader initialized
+2026-08-09 17:14:05 [INFO] Error handler initialized
+2026-08-09 17:14:05 [INFO] All loaders completed successfully
+2026-08-09 17:14:05 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:14:05"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:14:05"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:14:05"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:14:05"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:14:05"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:14:05"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:14:05"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:14:05"}
+2026-08-09 17:14:05 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:14:05"}
+2026-08-09 17:14:09 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:14:09"}
+2026-08-09 17:14:09 [INFO]  Database loader initialized
+2026-08-09 17:14:09 [INFO] Express loader initialized
+2026-08-09 17:14:09 [INFO]  Express loader initialized
+2026-08-09 17:14:09 [INFO] Routes configured
+2026-08-09 17:14:09 [INFO] Routes loader initialized
+2026-08-09 17:14:09 [INFO] Error handler initialized
+2026-08-09 17:14:09 [INFO] All loaders completed successfully
+2026-08-09 17:14:09 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:14:09"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:14:09"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:14:09"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:14:09"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:14:09"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:14:09"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:14:09"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:14:09"}
+2026-08-09 17:14:12 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:14:12"}
+2026-08-09 17:14:14 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:14:14"}
+2026-08-09 17:14:14 [INFO]  Database loader initialized
+2026-08-09 17:14:14 [INFO] Express loader initialized
+2026-08-09 17:14:14 [INFO]  Express loader initialized
+2026-08-09 17:14:14 [INFO] Routes configured
+2026-08-09 17:14:14 [INFO] Routes loader initialized
+2026-08-09 17:14:14 [INFO] Error handler initialized
+2026-08-09 17:14:14 [INFO] All loaders completed successfully
+2026-08-09 17:14:14 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:14:14"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:14:14"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:14:14"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:14:14"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:14:14"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:14:14"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:14:14"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:14:14"}
+2026-08-09 17:14:14 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:14:14"}
+2026-08-09 17:14:17 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:14:17"}
+2026-08-09 17:14:17 [INFO]  Database loader initialized
+2026-08-09 17:14:17 [INFO] Express loader initialized
+2026-08-09 17:14:17 [INFO]  Express loader initialized
+2026-08-09 17:14:17 [INFO] Routes configured
+2026-08-09 17:14:17 [INFO] Routes loader initialized
+2026-08-09 17:14:17 [INFO] Error handler initialized
+2026-08-09 17:14:17 [INFO] All loaders completed successfully
+2026-08-09 17:14:17 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:14:17"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:14:17"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:14:17"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:14:17"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:14:17"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:14:17"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:14:17"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:14:17"}
+2026-08-09 17:14:19 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:14:19"}
+2026-08-09 17:14:28 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:14:28"}
+2026-08-09 17:14:28 [INFO]  Database loader initialized
+2026-08-09 17:14:28 [INFO] Express loader initialized
+2026-08-09 17:14:28 [INFO]  Express loader initialized
+2026-08-09 17:14:28 [INFO] Routes configured
+2026-08-09 17:14:28 [INFO] Routes loader initialized
+2026-08-09 17:14:28 [INFO] Error handler initialized
+2026-08-09 17:14:28 [INFO] All loaders completed successfully
+2026-08-09 17:14:28 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:14:28"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:14:28"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:14:28"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:14:28"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:14:28"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:14:28"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:14:28"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:14:28"}
+2026-08-09 17:14:28 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:14:28"}
+2026-08-09 17:14:30 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:14:30"}
+2026-08-09 17:14:30 [INFO]  Database loader initialized
+2026-08-09 17:14:30 [INFO] Express loader initialized
+2026-08-09 17:14:30 [INFO]  Express loader initialized
+2026-08-09 17:14:30 [INFO] Routes configured
+2026-08-09 17:14:30 [INFO] Routes loader initialized
+2026-08-09 17:14:30 [INFO] Error handler initialized
+2026-08-09 17:14:30 [INFO] All loaders completed successfully
+2026-08-09 17:14:30 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:14:30"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:14:30"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:14:30"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:14:30"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:14:30"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:14:30"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:14:30"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:14:30"}
+2026-08-09 17:14:31 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:14:31"}
+2026-08-09 17:14:52 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:14:52"}
+2026-08-09 17:14:52 [INFO]  Database loader initialized
+2026-08-09 17:14:52 [INFO] Express loader initialized
+2026-08-09 17:14:52 [INFO]  Express loader initialized
+2026-08-09 17:14:52 [INFO] Routes configured
+2026-08-09 17:14:52 [INFO] Routes loader initialized
+2026-08-09 17:14:52 [INFO] Error handler initialized
+2026-08-09 17:14:52 [INFO] All loaders completed successfully
+2026-08-09 17:14:52 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:14:52"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:14:52"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:14:52"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:14:52"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:14:52"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:14:52"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:14:52"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:14:52"}
+2026-08-09 17:14:53 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:14:53"}
+2026-08-09 17:14:56 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:14:56"}
+2026-08-09 17:14:56 [INFO]  Database loader initialized
+2026-08-09 17:14:56 [INFO] Express loader initialized
+2026-08-09 17:14:56 [INFO]  Express loader initialized
+2026-08-09 17:14:56 [INFO] Routes configured
+2026-08-09 17:14:57 [INFO] Routes loader initialized
+2026-08-09 17:14:57 [INFO] Error handler initialized
+2026-08-09 17:14:57 [INFO] All loaders completed successfully
+2026-08-09 17:14:57 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:14:56"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:14:56"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:14:56"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:14:56"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:14:57"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:14:57"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:14:57"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:14:57"}
+2026-08-09 17:15:08 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:15:08"}
+2026-08-09 17:15:24 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:15:24"}
+2026-08-09 17:15:24 [INFO]  Database loader initialized
+2026-08-09 17:15:24 [INFO] Express loader initialized
+2026-08-09 17:15:24 [INFO]  Express loader initialized
+2026-08-09 17:15:24 [INFO] Routes configured
+2026-08-09 17:15:24 [INFO] Routes loader initialized
+2026-08-09 17:15:24 [INFO] Error handler initialized
+2026-08-09 17:15:24 [INFO] All loaders completed successfully
+2026-08-09 17:15:24 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:15:24"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:15:24"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:15:24"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:15:24"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:15:24"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:15:24"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:15:24"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:15:24"}
+2026-08-09 17:15:35 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:15:35"}
+2026-08-09 17:15:38 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:15:38"}
+2026-08-09 17:15:38 [INFO]  Database loader initialized
+2026-08-09 17:15:38 [INFO] Express loader initialized
+2026-08-09 17:15:38 [INFO]  Express loader initialized
+2026-08-09 17:15:38 [INFO] Routes configured
+2026-08-09 17:15:39 [INFO] Routes loader initialized
+2026-08-09 17:15:39 [INFO] Error handler initialized
+2026-08-09 17:15:39 [INFO] All loaders completed successfully
+2026-08-09 17:15:39 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:15:38"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:15:38"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:15:38"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:15:38"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:15:39"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:15:39"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:15:39"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:15:39"}
+2026-08-09 17:15:43 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:15:43"}
+2026-08-09 17:15:43 [INFO]  Database loader initialized
+2026-08-09 17:15:43 [INFO] Express loader initialized
+2026-08-09 17:15:43 [INFO]  Express loader initialized
+2026-08-09 17:15:43 [INFO] Routes configured
+2026-08-09 17:15:43 [INFO] Routes loader initialized
+2026-08-09 17:15:43 [INFO] Error handler initialized
+2026-08-09 17:15:43 [INFO] All loaders completed successfully
+2026-08-09 17:15:43 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:15:43"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:15:43"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:15:43"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:15:43"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:15:43"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:15:43"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:15:43"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:15:43"}
+2026-08-09 17:15:46 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:15:46"}
+2026-08-09 17:15:46 [INFO]  Database loader initialized
+2026-08-09 17:15:46 [INFO] Express loader initialized
+2026-08-09 17:15:46 [INFO]  Express loader initialized
+2026-08-09 17:15:46 [INFO] Routes configured
+2026-08-09 17:15:46 [INFO] Routes loader initialized
+2026-08-09 17:15:46 [INFO] Error handler initialized
+2026-08-09 17:15:46 [INFO] All loaders completed successfully
+2026-08-09 17:15:46 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:15:46"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:15:46"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:15:46"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:15:46"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:15:46"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:15:46"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:15:46"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:15:46"}
+2026-08-09 17:15:46 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:15:46"}
+2026-08-09 17:15:53 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:15:53"}
+2026-08-09 17:15:53 [INFO]  Database loader initialized
+2026-08-09 17:15:53 [INFO] Express loader initialized
+2026-08-09 17:15:53 [INFO]  Express loader initialized
+2026-08-09 17:15:53 [INFO] Routes configured
+2026-08-09 17:15:53 [INFO] Routes loader initialized
+2026-08-09 17:15:53 [INFO] Error handler initialized
+2026-08-09 17:15:53 [INFO] All loaders completed successfully
+2026-08-09 17:15:53 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:15:53"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:15:53"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:15:53"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:15:53"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:15:53"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:15:53"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:15:53"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:15:53"}
+2026-08-09 17:19:32 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:19:32"}
+2026-08-09 17:19:34 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:19:34"}
+2026-08-09 17:19:34 [INFO]  Database loader initialized
+2026-08-09 17:19:34 [INFO] Express loader initialized
+2026-08-09 17:19:34 [INFO]  Express loader initialized
+2026-08-09 17:19:34 [INFO] Routes configured
+2026-08-09 17:19:34 [INFO] Routes loader initialized
+2026-08-09 17:19:34 [INFO] Error handler initialized
+2026-08-09 17:19:34 [INFO] All loaders completed successfully
+2026-08-09 17:19:34 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:19:34"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:19:34"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:19:34"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:19:34"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:19:34"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:19:34"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:19:34"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:19:34"}
+2026-08-09 17:20:03 [INFO] Incoming request: GET /
+{"level":"info","message":"Incoming request: GET /","timestamp":"2026-08-09 17:20:03"}
+2026-08-09 17:21:12 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:21:12"}
+2026-08-09 17:21:14 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:21:14"}
+2026-08-09 17:21:14 [INFO]  Database loader initialized
+2026-08-09 17:21:14 [INFO] Express loader initialized
+2026-08-09 17:21:14 [INFO]  Express loader initialized
+2026-08-09 17:21:14 [INFO] Routes configured
+2026-08-09 17:21:14 [INFO] Routes loader initialized
+2026-08-09 17:21:14 [INFO] Error handler initialized
+2026-08-09 17:21:14 [INFO] All loaders completed successfully
+2026-08-09 17:21:14 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:21:14"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:21:14"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:21:14"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:21:14"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:21:14"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:21:14"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:21:14"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:21:14"}
+2026-08-09 17:21:45 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:21:45"}
+2026-08-09 17:21:47 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:21:47"}
+2026-08-09 17:21:47 [INFO]  Database loader initialized
+2026-08-09 17:21:47 [INFO] Express loader initialized
+2026-08-09 17:21:47 [INFO]  Express loader initialized
+2026-08-09 17:21:47 [INFO] Routes configured
+2026-08-09 17:21:47 [INFO] Routes loader initialized
+2026-08-09 17:21:47 [INFO] Error handler initialized
+2026-08-09 17:21:47 [INFO] All loaders completed successfully
+2026-08-09 17:21:47 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:21:47"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:21:47"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:21:47"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:21:47"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:21:47"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:21:47"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:21:47"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:21:47"}
+2026-08-09 17:21:51 [INFO] Incoming request: GET /
+{"level":"info","message":"Incoming request: GET /","timestamp":"2026-08-09 17:21:51"}
+2026-08-09 17:21:53 [INFO] Incoming request: GET /
+{"level":"info","message":"Incoming request: GET /","timestamp":"2026-08-09 17:21:53"}
+2026-08-09 17:21:53 [INFO] Incoming request: GET /
+{"level":"info","message":"Incoming request: GET /","timestamp":"2026-08-09 17:21:53"}
+2026-08-09 17:23:42 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:23:42"}
+2026-08-09 17:23:44 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:23:44"}
+2026-08-09 17:23:44 [INFO]  Database loader initialized
+2026-08-09 17:23:44 [INFO] Express loader initialized
+2026-08-09 17:23:44 [INFO]  Express loader initialized
+2026-08-09 17:23:44 [INFO] Routes configured
+2026-08-09 17:23:44 [INFO] Routes loader initialized
+2026-08-09 17:23:44 [INFO] Error handler initialized
+2026-08-09 17:23:44 [INFO] All loaders completed successfully
+2026-08-09 17:23:44 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:23:44"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:23:44"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:23:44"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:23:44"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:23:44"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:23:44"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:23:44"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:23:44"}
+2026-08-09 17:32:52 [INFO] Incoming request: POST /invoices
+{"level":"info","message":"Incoming request: POST /invoices","timestamp":"2026-08-09 17:32:52"}
+2026-08-09 17:32:52 [INFO] Creating new invoice
+Metadata: {
+  "clientEmail": "mamitianarandrianantenaina253@gmail.com"
+}
+{"clientEmail":"mamitianarandrianantenaina253@gmail.com","level":"info","message":"Creating new invoice","timestamp":"2026-08-09 17:32:52"}
+2026-08-09 17:32:52 [INFO] Invoice created successfully
+Metadata: {
+  "invoiceId": "cmslwjpbu000058hfdllh353y",
+  "invoiceNumber": "INV-20260809-1219"
+}
+{"invoiceId":"cmslwjpbu000058hfdllh353y","invoiceNumber":"INV-20260809-1219","level":"info","message":"Invoice created successfully","timestamp":"2026-08-09 17:32:52"}
+2026-08-09 17:32:52 [INFO] Incoming request: POST /api/invoices/cmslwjpbu000058hfdllh353y/export?format=A4
+{"level":"info","message":"Incoming request: POST /api/invoices/cmslwjpbu000058hfdllh353y/export?format=A4","timestamp":"2026-08-09 17:32:52"}
+2026-08-09 17:35:51 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:35:51"}
+2026-08-09 17:35:56 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:35:56"}
+2026-08-09 17:35:56 [INFO]  Database loader initialized
+2026-08-09 17:35:56 [INFO] Express loader initialized
+2026-08-09 17:35:56 [INFO]  Express loader initialized
+2026-08-09 17:35:56 [INFO] Routes configured
+2026-08-09 17:35:56 [INFO] Routes loader initialized
+2026-08-09 17:35:56 [INFO] Error handler initialized
+2026-08-09 17:35:56 [INFO] All loaders completed successfully
+2026-08-09 17:35:56 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:35:56"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:35:56"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:35:56"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:35:56"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:35:56"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:35:56"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:35:56"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:35:56"}
+2026-08-09 17:36:39 [INFO] Incoming request: POST /invoices
+{"level":"info","message":"Incoming request: POST /invoices","timestamp":"2026-08-09 17:36:39"}
+2026-08-09 17:36:55 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:36:55"}
+2026-08-09 17:36:57 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:36:57"}
+2026-08-09 17:36:57 [INFO]  Database loader initialized
+2026-08-09 17:36:57 [INFO] Express loader initialized
+2026-08-09 17:36:57 [INFO]  Express loader initialized
+2026-08-09 17:36:57 [INFO] Routes configured
+2026-08-09 17:36:57 [INFO] Routes loader initialized
+2026-08-09 17:36:57 [INFO] Error handler initialized
+2026-08-09 17:36:57 [INFO] All loaders completed successfully
+2026-08-09 17:36:57 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:36:57"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:36:57"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:36:57"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:36:57"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:36:57"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:36:57"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:36:57"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:36:57"}
+2026-08-09 17:37:15 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:37:15"}
+2026-08-09 17:37:17 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:37:17"}
+2026-08-09 17:37:17 [INFO]  Database loader initialized
+2026-08-09 17:37:17 [INFO] Express loader initialized
+2026-08-09 17:37:17 [INFO]  Express loader initialized
+2026-08-09 17:37:17 [INFO] Routes configured
+2026-08-09 17:37:17 [INFO] Routes loader initialized
+2026-08-09 17:37:17 [INFO] Error handler initialized
+2026-08-09 17:37:17 [INFO] All loaders completed successfully
+2026-08-09 17:37:17 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:37:17"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:37:17"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:37:17"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:37:17"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:37:17"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:37:17"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:37:17"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:37:17"}
+2026-08-09 17:37:32 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:37:32"}
+2026-08-09 17:37:35 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:37:35"}
+2026-08-09 17:37:35 [INFO]  Database loader initialized
+2026-08-09 17:37:35 [INFO] Express loader initialized
+2026-08-09 17:37:35 [INFO]  Express loader initialized
+2026-08-09 17:37:35 [INFO] Routes configured
+2026-08-09 17:37:35 [INFO] Routes loader initialized
+2026-08-09 17:37:35 [INFO] Error handler initialized
+2026-08-09 17:37:35 [INFO] All loaders completed successfully
+2026-08-09 17:37:35 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:37:35"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:37:35"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:37:35"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:37:35"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:37:35"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:37:35"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:37:35"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:37:35"}
+2026-08-09 17:38:05 [INFO] SIGTERM received. Shutting down gracefully...
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","timestamp":"2026-08-09 17:38:05"}
+2026-08-09 17:38:08 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:38:08"}
+2026-08-09 17:38:08 [INFO]  Database loader initialized
+2026-08-09 17:38:08 [INFO] Express loader initialized
+2026-08-09 17:38:08 [INFO]  Express loader initialized
+2026-08-09 17:38:08 [INFO] Routes configured
+2026-08-09 17:38:08 [INFO] Routes loader initialized
+2026-08-09 17:38:08 [INFO] Error handler initialized
+2026-08-09 17:38:08 [INFO] All loaders completed successfully
+2026-08-09 17:38:08 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:38:08"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:38:08"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:38:08"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:38:08"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:38:08"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:38:08"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:38:08"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:38:08"}
+2026-08-09 17:42:21 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-09 17:42:21"}
+2026-08-09 17:42:21 [INFO]  Database loader initialized
+2026-08-09 17:42:21 [INFO] Express loader initialized
+2026-08-09 17:42:21 [INFO]  Express loader initialized
+2026-08-09 17:42:21 [INFO] Routes configured
+2026-08-09 17:42:21 [INFO] Routes loader initialized
+2026-08-09 17:42:21 [INFO] Error handler initialized
+2026-08-09 17:42:21 [INFO] All loaders completed successfully
+2026-08-09 17:42:21 [INFO] Application initialized successfully
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-09 17:42:21"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-09 17:42:21"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-09 17:42:21"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-09 17:42:21"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-09 17:42:21"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-09 17:42:21"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-09 17:42:21"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-09 17:42:21"}
+2026-08-09 17:42:38 [INFO] Incoming request: GET /favicon.ico
+{"level":"info","message":"Incoming request: GET /favicon.ico","timestamp":"2026-08-09 17:42:38"}
+2026-08-09 17:43:00 [INFO] Incoming request: POST /
+{"level":"info","message":"Incoming request: POST /","timestamp":"2026-08-09 17:43:00"}
+2026-08-09 17:44:13 [INFO] Incoming request: POST /
+{"level":"info","message":"Incoming request: POST /","timestamp":"2026-08-09 17:44:13"}
+2026-08-09 17:50:21 [INFO] Incoming request: POST /api/invoices/
+{"level":"info","message":"Incoming request: POST /api/invoices/","timestamp":"2026-08-09 17:50:21"}
+2026-08-09 17:50:21 [INFO] Creating new invoice
+Metadata: {
+  "clientEmail": "mamitianarandrianantenaina253@gmail.com"
+}
+{"clientEmail":"mamitianarandrianantenaina253@gmail.com","level":"info","message":"Creating new invoice","timestamp":"2026-08-09 17:50:21"}
+2026-08-09 17:50:31 [ERROR] 
+Invalid `this.prisma.invoice.create()` invocation in
+/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34
+
+  25   total: number,
+  26   invoiceNumber: string
+  27 ): Promise<InvoiceWithProducts> {
+→ 28   return this.prisma.invoice.create(
+Database error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms
+    (pool connections: active=0 idle=0 limit=10)`
+Metadata: {
+  "statusCode": 500,
+  "url": "/api/invoices/",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)"
+}
+{"ip":"::1","level":"error","message":"\nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`","method":"POST","stack":"PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)","statusCode":500,"timestamp":"2026-08-09 17:50:31","url":"/api/invoices/"}
+2026-08-09 17:50:39 [INFO] Incoming request: POST /api/invoices/
+{"level":"info","message":"Incoming request: POST /api/invoices/","timestamp":"2026-08-09 17:50:39"}
+2026-08-09 17:50:39 [INFO] Creating new invoice
+Metadata: {
+  "clientEmail": "mamitianarandrianantenaina253@gmail.com"
+}
+{"clientEmail":"mamitianarandrianantenaina253@gmail.com","level":"info","message":"Creating new invoice","timestamp":"2026-08-09 17:50:39"}
+2026-08-09 17:50:49 [ERROR] 
+Invalid `this.prisma.invoice.create()` invocation in
+/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34
+
+  25   total: number,
+  26   invoiceNumber: string
+  27 ): Promise<InvoiceWithProducts> {
+→ 28   return this.prisma.invoice.create(
+Database error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms
+    (pool connections: active=0 idle=0 limit=10)`
+Metadata: {
+  "statusCode": 500,
+  "url": "/api/invoices/",
+  "method": "POST",
+  "ip": "::1",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)"
+}
+{"ip":"::1","level":"error","message":"\nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`","method":"POST","stack":"PrismaClientKnownRequestError: \nInvalid `this.prisma.invoice.create()` invocation in\n/home/mie-kely/invoice/src/repositories/invoice.repository.ts:28:34\n\n  25   total: number,\n  26   invoiceNumber: string\n  27 ): Promise<InvoiceWithProducts> {\n→ 28   return this.prisma.invoice.create(\nDatabase error. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10000ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at Jr.handleRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:8286)\n    at Jr.handleAndLogRequestError (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7581)\n    at Jr.request (/home/mie-kely/invoice/generated/prisma/runtime/client.js:69:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async a (/home/mie-kely/invoice/generated/prisma/runtime/client.js:103:6862)\n    at async InvoiceService.create (/home/mie-kely/invoice/src/services/invoice.service.ts:51:21)\n    at async <anonymous> (/home/mie-kely/invoice/src/controllers/invoice.controller.ts:13:25)","statusCode":500,"timestamp":"2026-08-09 17:50:49","url":"/api/invoices/"}
+2026-08-09 17:51:52 [INFO] Incoming request: POST /api/invoices/
+{"level":"info","message":"Incoming request: POST /api/invoices/","timestamp":"2026-08-09 17:51:52"}
+2026-08-09 17:51:52 [INFO] Creating new invoice
+Metadata: {
+  "clientEmail": "mamitianarandrianantenaina253@gmail.com"
+}
+{"clientEmail":"mamitianarandrianantenaina253@gmail.com","level":"info","message":"Creating new invoice","timestamp":"2026-08-09 17:51:52"}
+2026-08-09 17:51:52 [INFO] Invoice created successfully
+Metadata: {
+  "invoiceId": "cmslx85210000f4hfu9p9d30k",
+  "invoiceNumber": "INV-20260809-1405"
+}
+{"invoiceId":"cmslx85210000f4hfu9p9d30k","invoiceNumber":"INV-20260809-1405","level":"info","message":"Invoice created successfully","timestamp":"2026-08-09 17:51:52"}
+2026-08-09 17:51:52 [INFO] Incoming request: POST /api/invoices/cmslx85210000f4hfu9p9d30k/export?format=A4
+{"level":"info","message":"Incoming request: POST /api/invoices/cmslx85210000f4hfu9p9d30k/export?format=A4","timestamp":"2026-08-09 17:51:52"}
+{"level":"info","message":"Exportation de la facture cmslx85210000f4hfu9p9d30k au format A4","timestamp":"2026-08-09 17:51:52"}
+2026-08-09 17:51:52 [INFO] Exportation de la facture cmslx85210000f4hfu9p9d30k au format A4
+2026-08-09 17:51:54 [INFO] Invoice PDF generated successfully
+Metadata: {
+  "invoiceId": "cmslx85210000f4hfu9p9d30k",
+  "invoiceNumber": "INV-20260809-1405",
+  "pdfPath": "/home/mie-kely/invoice/pdf/invoices/INV-20260809-1405.pdf"
+}
+{"invoiceId":"cmslx85210000f4hfu9p9d30k","invoiceNumber":"INV-20260809-1405","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260809-1405.pdf","timestamp":"2026-08-09 17:51:54"}
+2026-08-09 17:51:54 [INFO] Incoming request: POST /api/invoices/cmslx85210000f4hfu9p9d30k/email?format=A4
+{"level":"info","message":"Incoming request: POST /api/invoices/cmslx85210000f4hfu9p9d30k/email?format=A4","timestamp":"2026-08-09 17:51:54"}
+2026-08-09 17:51:54 [INFO] Envoi de la facture cmslx85210000f4hfu9p9d30k par email
+Metadata: {
+  "to": "client",
+  "format": "A4"
+}
+{"format":"A4","level":"info","message":"Envoi de la facture cmslx85210000f4hfu9p9d30k par email","timestamp":"2026-08-09 17:51:54","to":"client"}
+2026-08-09 17:51:55 [INFO] Invoice PDF generated successfully
+Metadata: {
+  "invoiceId": "cmslx85210000f4hfu9p9d30k",
+  "invoiceNumber": "INV-20260809-1405",
+  "pdfPath": "/home/mie-kely/invoice/pdf/invoices/INV-20260809-1405.pdf"
+}
+{"invoiceId":"cmslx85210000f4hfu9p9d30k","invoiceNumber":"INV-20260809-1405","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260809-1405.pdf","timestamp":"2026-08-09 17:51:55"}
+2026-08-09 17:52:04 [INFO] Email sent successfully
+Metadata: {
+  "to": "mamitianarandrianantenaina253@gmail.com",
+  "subject": "Facture #INV-20260809-1405",
+  "messageId": "<de61361f-2d0b-0065-ef77-789519b5a50f@example.com>"
+}
+{"level":"info","message":"Email sent successfully","messageId":"<de61361f-2d0b-0065-ef77-789519b5a50f@example.com>","subject":"Facture #INV-20260809-1405","timestamp":"2026-08-09 17:52:04","to":"mamitianarandrianantenaina253@gmail.com"}
+2026-08-09 17:52:04 [INFO] Invoice email sent successfully
+Metadata: {
+  "invoiceId": "cmslx85210000f4hfu9p9d30k",
+  "invoiceNumber": "INV-20260809-1405",
+  "to": "mamitianarandrianantenaina253@gmail.com"
+}
+{"invoiceId":"cmslx85210000f4hfu9p9d30k","invoiceNumber":"INV-20260809-1405","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-09 17:52:04","to":"mamitianarandrianantenaina253@gmail.com"}
+2026-08-09 17:52:47 [INFO] Incoming request: DELETE /api/invoices/cmslx85210000f4hfu9p9d30k
+{"level":"info","message":"Incoming request: DELETE /api/invoices/cmslx85210000f4hfu9p9d30k","timestamp":"2026-08-09 17:52:47"}
+2026-08-09 17:52:47 [INFO] Fetching invoice
+Metadata: {
+  "id": "cmslx85210000f4hfu9p9d30k"
+}
+{"id":"cmslx85210000f4hfu9p9d30k","level":"info","message":"Fetching invoice","timestamp":"2026-08-09 17:52:47"}
+2026-08-09 17:52:47 [INFO] Invoice deleted
+Metadata: {
+  "id": "cmslx85210000f4hfu9p9d30k"
+}
+{"id":"cmslx85210000f4hfu9p9d30k","level":"info","message":"Invoice deleted","timestamp":"2026-08-09 17:52:47"}
+2026-08-09 17:54:38 [INFO] Incoming request: POST /api/invoices/
+{"level":"info","message":"Incoming request: POST /api/invoices/","timestamp":"2026-08-09 17:54:38"}
+2026-08-09 17:54:38 [INFO] Creating new invoice
+Metadata: {
+  "clientEmail": "test@gmail.com"
+}
+{"clientEmail":"test@gmail.com","level":"info","message":"Creating new invoice","timestamp":"2026-08-09 17:54:38"}
+2026-08-09 17:54:38 [INFO] Invoice created successfully
+Metadata: {
+  "invoiceId": "cmslxboxn0001f4hfspdcxwjy",
+  "invoiceNumber": "INV-20260809-2868"
+}
+{"invoiceId":"cmslxboxn0001f4hfspdcxwjy","invoiceNumber":"INV-20260809-2868","level":"info","message":"Invoice created successfully","timestamp":"2026-08-09 17:54:38"}
+2026-08-09 17:54:38 [INFO] Incoming request: POST /api/invoices/cmslxboxn0001f4hfspdcxwjy/export?format=A4
+{"level":"info","message":"Incoming request: POST /api/invoices/cmslxboxn0001f4hfspdcxwjy/export?format=A4","timestamp":"2026-08-09 17:54:38"}
+2026-08-09 17:54:38 [INFO] Exportation de la facture cmslxboxn0001f4hfspdcxwjy au format A4
+{"level":"info","message":"Exportation de la facture cmslxboxn0001f4hfspdcxwjy au format A4","timestamp":"2026-08-09 17:54:38"}
+2026-08-09 17:54:39 [INFO] Invoice PDF generated successfully
+Metadata: {
+  "invoiceId": "cmslxboxn0001f4hfspdcxwjy",
+  "invoiceNumber": "INV-20260809-2868",
+  "pdfPath": "/home/mie-kely/invoice/pdf/invoices/INV-20260809-2868.pdf"
+}
+{"invoiceId":"cmslxboxn0001f4hfspdcxwjy","invoiceNumber":"INV-20260809-2868","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260809-2868.pdf","timestamp":"2026-08-09 17:54:39"}
+2026-08-09 17:54:39 [INFO] Incoming request: POST /api/invoices/cmslxboxn0001f4hfspdcxwjy/email?format=A4
+{"level":"info","message":"Incoming request: POST /api/invoices/cmslxboxn0001f4hfspdcxwjy/email?format=A4","timestamp":"2026-08-09 17:54:39"}
+2026-08-09 17:54:39 [INFO] Envoi de la facture cmslxboxn0001f4hfspdcxwjy par email
+Metadata: {
+  "to": "client",
+  "format": "A4"
+}
+{"format":"A4","level":"info","message":"Envoi de la facture cmslxboxn0001f4hfspdcxwjy par email","timestamp":"2026-08-09 17:54:39","to":"client"}
+2026-08-09 17:54:40 [INFO] Invoice PDF generated successfully
+Metadata: {
+  "invoiceId": "cmslxboxn0001f4hfspdcxwjy",
+  "invoiceNumber": "INV-20260809-2868",
+  "pdfPath": "/home/mie-kely/invoice/pdf/invoices/INV-20260809-2868.pdf"
+}
+{"invoiceId":"cmslxboxn0001f4hfspdcxwjy","invoiceNumber":"INV-20260809-2868","level":"info","message":"Invoice PDF generated successfully","pdfPath":"/home/mie-kely/invoice/pdf/invoices/INV-20260809-2868.pdf","timestamp":"2026-08-09 17:54:40"}
+2026-08-09 17:54:47 [INFO] Email sent successfully
+Metadata: {
+  "to": "test@gmail.com",
+  "subject": "Facture #INV-20260809-2868",
+  "messageId": "<7691995a-455a-b12c-fa71-240b2b4b3360@example.com>"
+}
+{"level":"info","message":"Email sent successfully","messageId":"<7691995a-455a-b12c-fa71-240b2b4b3360@example.com>","subject":"Facture #INV-20260809-2868","timestamp":"2026-08-09 17:54:47","to":"test@gmail.com"}
+2026-08-09 17:54:47 [INFO] Invoice email sent successfully
+Metadata: {
+  "invoiceId": "cmslxboxn0001f4hfspdcxwjy",
+  "invoiceNumber": "INV-20260809-2868",
+  "to": "test@gmail.com"
+}
+{"invoiceId":"cmslxboxn0001f4hfspdcxwjy","invoiceNumber":"INV-20260809-2868","level":"info","message":"Invoice email sent successfully","timestamp":"2026-08-09 17:54:47","to":"test@gmail.com"}
+2026-08-09 17:55:29 [INFO] Incoming request: GET /.well-known/appspecific/com.chrome.devtools.json
+{"level":"info","message":"Incoming request: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-08-09 17:55:29"}
+2026-08-03 15:26:59 [INFO] Database connected successfully
+{"level":"info","message":"Database connected successfully","timestamp":"2026-08-03 15:26:59"}
+{"level":"info","message":" Database loader initialized","timestamp":"2026-08-03 15:26:59"}
+{"level":"info","message":"Express loader initialized","timestamp":"2026-08-03 15:26:59"}
+{"level":"info","message":" Express loader initialized","timestamp":"2026-08-03 15:26:59"}
+{"level":"info","message":"Routes configured","timestamp":"2026-08-03 15:26:59"}
+{"level":"info","message":"Routes loader initialized","timestamp":"2026-08-03 15:26:59"}
+{"level":"info","message":"Error handler initialized","timestamp":"2026-08-03 15:26:59"}
+{"level":"info","message":"All loaders completed successfully","timestamp":"2026-08-03 15:26:59"}
+{"level":"info","message":"Application initialized successfully","timestamp":"2026-08-03 15:26:59"}
+2026-08-03 15:26:59 [INFO]  Database loader initialized
+2026-08-03 15:26:59 [INFO] Express loader initialized
+2026-08-03 15:26:59 [INFO]  Express loader initialized
+2026-08-03 15:26:59 [INFO] Routes configured
+2026-08-03 15:26:59 [INFO] Routes loader initialized
+2026-08-03 15:26:59 [INFO] Error handler initialized
+2026-08-03 15:26:59 [INFO] All loaders completed successfully
+2026-08-03 15:26:59 [INFO] Application initialized successfully
+2026-08-12 08:34:02 [INFO] Incoming request: GET /favicon.ico
+{"level":"info","message":"Incoming request: GET /favicon.ico","timestamp":"2026-08-12 08:34:02"}
+2026-08-12 08:34:02 [INFO] Incoming request: GET /favicon.ico
+{"level":"info","message":"Incoming request: GET /favicon.ico","timestamp":"2026-08-12 08:34:02"}

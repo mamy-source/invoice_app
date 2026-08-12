@@ -26,7 +26,7 @@ function routesLoader(app:Express): Express {
   });
   
   // Invoice routes
-  app.use('/invoices', router);
+  app.use('/api/invoices', router);
   
   // 404 handler for unknown routes
   app.use((req, res) => {
